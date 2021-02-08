@@ -16,7 +16,7 @@ namespace archive_bfp
         public string Name => "BFP";
         public string Description => "Binary File Package";
         public string Extension => "*.bfp";
-        public string About => "This is the BFP archive manager for Karameru.";
+        public string About => "这是 Karameru 的 BFP 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

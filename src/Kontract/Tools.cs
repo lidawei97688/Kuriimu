@@ -15,8 +15,8 @@ namespace Kontract
             var alltypes = plugins.Select(x => new { x.Description, Extension = x.Extension.ToLower() }).OrderBy(o => o.Description).ToList();
 
             // Add two special cases at start and end
-            if (alltypes.Count > 0) alltypes.Insert(0, new { Description = "All Supported Files", Extension = string.Join(";", alltypes.Select(x => x.Extension).Distinct()) });
-            alltypes.Add(new { Description = "All Files", Extension = "*.*" });
+            if (alltypes.Count > 0) alltypes.Insert(0, new { Description = "所有支持的文件", Extension = string.Join(";", alltypes.Select(x => x.Extension).Distinct()) });
+            alltypes.Add(new { Description = "所有文件", Extension = "*.*" });
 
             return string.Join("|", alltypes.Select(x => $"{x.Description} ({x.Extension})|{x.Extension}"));
         }

@@ -25,7 +25,7 @@ namespace Kuriimu
         private void frmFind_Load(object sender, EventArgs e)
         {
             Icon = !Replace ? Resources.find : Resources.replace;
-            Text = !Replace ? "Find" : "Replace";
+            Text = !Replace ? "查找" : "替换";
             tabFindReplace.SelectedIndex = !Replace ? 0 : 1;
             AcceptButton = !Replace ? btnFindText : btnReplaceText;
             CancelButton = !Replace ? btnCancel : btnCancelReplace;
@@ -37,7 +37,7 @@ namespace Kuriimu
             // Replace
             txtFindTextReplace.Text = Settings.Default.FindWhat;
             txtReplaceText.Text = Settings.Default.ReplaceWith;
-            btnReplaceText.Text = Settings.Default.ReplaceAll ? "Replace All" : "Replace";
+            btnReplaceText.Text = Settings.Default.ReplaceAll ? "全部替换" : "替换";
             chkMatchCaseReplace.Checked = Settings.Default.FindMatchCase;
             chkReplaceAll.Checked = Settings.Default.ReplaceAll;
 
@@ -72,7 +72,7 @@ namespace Kuriimu
             //    lstResults_DoubleClick(lstResults, EventArgs.Empty);
 
             if (lstResults.Items.Count == 0)
-                MessageBox.Show("Could not find \"" + txtFindText.Text + "\".", "Find", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("未找到 \"" + txtFindText.Text + "\".", "查找", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void DoFind()
@@ -118,7 +118,7 @@ namespace Kuriimu
             }
             lstResults.EndUpdate();
 
-            tslResultCount.Text = lstResults.Items.Count > 0 ? "Found " + lstResults.Items.Count + " matche(s)." : string.Empty;
+            tslResultCount.Text = lstResults.Items.Count > 0 ? "找到 " + lstResults.Items.Count + " 个匹配项" : string.Empty;
         }
 
         private void btnReplaceText_Click(object sender, EventArgs e)
@@ -126,7 +126,7 @@ namespace Kuriimu
             DoReplace();
 
             if (lstResultsReplace.Items.Count == 0)
-                MessageBox.Show("Could not find \"" + txtFindTextReplace.Text + "\".", "Replace", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("未找到 \"" + txtFindTextReplace.Text + "\".", "替换", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void DoReplace()
@@ -206,7 +206,7 @@ namespace Kuriimu
             }
             lstResultsReplace.EndUpdate();
 
-            tslResultCount.Text = lstResultsReplace.Items.Count > 0 ? "Replaced strings in " + lstResultsReplace.Items.Count + (lstResultsReplace.Items.Count == 1 ? " entry." : " entries.") : string.Empty;
+            tslResultCount.Text = lstResultsReplace.Items.Count > 0 ? "替换了 " + lstResultsReplace.Items.Count + (lstResultsReplace.Items.Count == 1 ? " 个条目中的字符串" : " 条目.") : string.Empty;
 
             if (!Replaced)
                 Replaced = lstResultsReplace.Items.Count > 0;
@@ -237,7 +237,7 @@ namespace Kuriimu
 
         private void chkReplaceAll_CheckedChanged(object sender, EventArgs e)
         {
-            btnReplaceText.Text = chkReplaceAll.Checked ? "Replace All" : "Replace";
+            btnReplaceText.Text = chkReplaceAll.Checked ? "全部替换" : "替换";
             Settings.Default.ReplaceAll = chkReplaceAll.Checked;
             Settings.Default.Save();
         }

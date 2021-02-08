@@ -32,7 +32,7 @@ namespace Kuriimu
         {
             var fbd = new FolderBrowserDialog
             {
-                Description = "Select the directory to search through.",
+                Description = "选择要搜索的文件夹",
                 SelectedPath = Settings.Default.SearchDirectoryDirectory
             };
 
@@ -112,7 +112,7 @@ namespace Kuriimu
 
             if (lstResults.Items.Count == 0)
             {
-                MessageBox.Show($"Could not find \"{txtSearchText.Text}\".", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"未找到 \"{txtSearchText.Text}\"。", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

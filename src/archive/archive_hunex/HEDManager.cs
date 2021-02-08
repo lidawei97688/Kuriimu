@@ -18,7 +18,7 @@ namespace archive_hunex
 
         public string Description => "HuneX Engine HED Archive Format";
         public string Extension => "*.hed";
-        public string About => "This is the HuneX HED archive manager for Karameru.";
+        public string About => "这是 Karameru 的 HuneX HED 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

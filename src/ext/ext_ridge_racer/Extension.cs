@@ -36,7 +36,7 @@ namespace ext_ridge_racer
         {
             if (_hasChanges)
             {
-                DialogResult dr = MessageBox.Show("Would you like to save your changes before exiting?", "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                DialogResult dr = MessageBox.Show("退出前是否保存更改？", "更改尚未保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
                 if (dr == DialogResult.Yes)
                 {
@@ -98,7 +98,7 @@ namespace ext_ridge_racer
             DialogResult dr = DialogResult.No;
 
             if (_fileOpen && _hasChanges)
-                dr = MessageBox.Show("You have unsaved changes in " + FileName() + ". Save changes before creating a new file?", "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                dr = MessageBox.Show("" + FileName() + " 中有尚未保存的更改。是否在创建新文件之前保存更改？", "更改尚未保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
             switch (dr)
             {
@@ -117,7 +117,7 @@ namespace ext_ridge_racer
             DialogResult dr = DialogResult.No;
 
             if (_fileOpen && _hasChanges)
-                dr = MessageBox.Show("You have unsaved changes in " + FileName() + ". Save changes before opening another file?", "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                dr = MessageBox.Show("" + FileName() + " 中有尚未保存的更改。是否在创建新文件之前保存更改？", "更改尚未保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
             switch (dr)
             {

@@ -116,7 +116,7 @@
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.mnuMain.Size = new System.Drawing.Size(984, 24);
+            this.mnuMain.Size = new System.Drawing.Size(984, 25);
             this.mnuMain.TabIndex = 1;
             // 
             // fileToolStripMenuItem
@@ -129,16 +129,16 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.fileToolStripMenuItem.Text = "&文件";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_open;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.openToolStripMenuItem.Text = "&打开";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // openRawToolStripMenuItem
@@ -146,8 +146,8 @@
             this.openRawToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_open;
             this.openRawToolStripMenuItem.Name = "openRawToolStripMenuItem";
             this.openRawToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.openRawToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.openRawToolStripMenuItem.Text = "Open Raw Image";
+            this.openRawToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.openRawToolStripMenuItem.Text = "打开Raw图像";
             this.openRawToolStripMenuItem.Click += new System.EventHandler(this.openRawToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
@@ -156,8 +156,8 @@
             this.saveToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_save;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.saveToolStripMenuItem.Text = "&保存";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
@@ -166,22 +166,22 @@
             this.saveAsToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_save_as;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.saveAsToolStripMenuItem.Text = "S&ave As...";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.saveAsToolStripMenuItem.Text = "&另存为...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(204, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.exitToolStripMenuItem.Text = "&退出";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // imageToolStripMenuItem
@@ -190,8 +190,8 @@
             this.exportPNGToolStripMenuItem,
             this.importPNGToolStripMenuItem});
             this.imageToolStripMenuItem.Name = "imageToolStripMenuItem";
-            this.imageToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.imageToolStripMenuItem.Text = "&Image";
+            this.imageToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.imageToolStripMenuItem.Text = "&图像";
             // 
             // exportPNGToolStripMenuItem
             // 
@@ -199,8 +199,8 @@
             this.exportPNGToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_export;
             this.exportPNGToolStripMenuItem.Name = "exportPNGToolStripMenuItem";
             this.exportPNGToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.exportPNGToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.exportPNGToolStripMenuItem.Text = "&Export PNG";
+            this.exportPNGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportPNGToolStripMenuItem.Text = "&提取 PNG";
             this.exportPNGToolStripMenuItem.Click += new System.EventHandler(this.exportPNGToolStripMenuItem_Click);
             // 
             // importPNGToolStripMenuItem
@@ -209,8 +209,8 @@
             this.importPNGToolStripMenuItem.Image = global::Kukkii.Properties.Resources.import_import;
             this.importPNGToolStripMenuItem.Name = "importPNGToolStripMenuItem";
             this.importPNGToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.importPNGToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.importPNGToolStripMenuItem.Text = "&Import PNG";
+            this.importPNGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importPNGToolStripMenuItem.Text = "&嵌入 PNG";
             this.importPNGToolStripMenuItem.Click += new System.EventHandler(this.importPNGToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
@@ -220,27 +220,27 @@
             this.encryptionToolStripMenuItem,
             this.hashToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.toolsToolStripMenuItem.Text = "&Tools";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.toolsToolStripMenuItem.Text = "&工具";
             // 
             // compressionToolStripMenuItem
             // 
             this.compressionToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_compression;
             this.compressionToolStripMenuItem.Name = "compressionToolStripMenuItem";
-            this.compressionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.compressionToolStripMenuItem.Text = "&Compression";
+            this.compressionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.compressionToolStripMenuItem.Text = "&压缩解压";
             // 
             // encryptionToolStripMenuItem
             // 
             this.encryptionToolStripMenuItem.Name = "encryptionToolStripMenuItem";
-            this.encryptionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.encryptionToolStripMenuItem.Text = "&Encryption";
+            this.encryptionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.encryptionToolStripMenuItem.Text = "&加密解密";
             // 
             // hashToolStripMenuItem
             // 
             this.hashToolStripMenuItem.Name = "hashToolStripMenuItem";
-            this.hashToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.hashToolStripMenuItem.Text = "Hash";
+            this.hashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hashToolStripMenuItem.Text = "校验";
             // 
             // batchToolStripMenuItem
             // 
@@ -249,8 +249,8 @@
             this.batchImportPNGToolStripMenuItem,
             this.batchScanSubdirectoriesToolStripMenuItem});
             this.batchToolStripMenuItem.Name = "batchToolStripMenuItem";
-            this.batchToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.batchToolStripMenuItem.Text = "&Batch";
+            this.batchToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.batchToolStripMenuItem.Text = "&批量操作";
             // 
             // batchExportPNGToolStripMenuItem
             // 
@@ -258,8 +258,8 @@
             this.batchExportPNGToolStripMenuItem.Name = "batchExportPNGToolStripMenuItem";
             this.batchExportPNGToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.E)));
-            this.batchExportPNGToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
-            this.batchExportPNGToolStripMenuItem.Text = "Batch &Export PNG";
+            this.batchExportPNGToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.batchExportPNGToolStripMenuItem.Text = "批量&提取 PNG";
             this.batchExportPNGToolStripMenuItem.Click += new System.EventHandler(this.batchExportPNGToolStripMenuItem_Click);
             // 
             // batchImportPNGToolStripMenuItem
@@ -268,15 +268,15 @@
             this.batchImportPNGToolStripMenuItem.Name = "batchImportPNGToolStripMenuItem";
             this.batchImportPNGToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.I)));
-            this.batchImportPNGToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
-            this.batchImportPNGToolStripMenuItem.Text = "Batch &Import PNG";
+            this.batchImportPNGToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.batchImportPNGToolStripMenuItem.Text = "批量&嵌入 PNG";
             this.batchImportPNGToolStripMenuItem.Click += new System.EventHandler(this.batchImportPNGToolStripMenuItem_Click);
             // 
             // batchScanSubdirectoriesToolStripMenuItem
             // 
             this.batchScanSubdirectoriesToolStripMenuItem.Image = global::Kukkii.Properties.Resources.menu_scan_subdirectories_off;
             this.batchScanSubdirectoriesToolStripMenuItem.Name = "batchScanSubdirectoriesToolStripMenuItem";
-            this.batchScanSubdirectoriesToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.batchScanSubdirectoriesToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.batchScanSubdirectoriesToolStripMenuItem.Text = "Don\'t Scan Sub-directories";
             this.batchScanSubdirectoriesToolStripMenuItem.Click += new System.EventHandler(this.batchScanSubdirectoriesToolStripMenuItem_Click);
             // 
@@ -288,8 +288,8 @@
             this.toolStripSeparator4,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.helpToolStripMenuItem.Text = "&帮助";
             // 
             // gBATempToolStripMenuItem
             // 
@@ -316,13 +316,13 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Text = "&关于";
             // 
             // upgradeToKuriimu2ToolStripMenuItem
             // 
             this.upgradeToKuriimu2ToolStripMenuItem.Name = "upgradeToKuriimu2ToolStripMenuItem";
-            this.upgradeToKuriimu2ToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
-            this.upgradeToKuriimu2ToolStripMenuItem.Text = "Upgrade to Kuriimu2";
+            this.upgradeToKuriimu2ToolStripMenuItem.Size = new System.Drawing.Size(107, 21);
+            this.upgradeToKuriimu2ToolStripMenuItem.Text = "升级到Kuriimu2";
             this.upgradeToKuriimu2ToolStripMenuItem.Click += new System.EventHandler(this.upgradeToKuriimu2ToolStripMenuItem_Click);
             // 
             // tlsMain
@@ -348,10 +348,10 @@
             this.tsbGridColor2,
             this.tsbImageBorderStyle,
             this.tsbImageBorderColor});
-            this.tlsMain.Location = new System.Drawing.Point(0, 24);
+            this.tlsMain.Location = new System.Drawing.Point(0, 25);
             this.tlsMain.Name = "tlsMain";
             this.tlsMain.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsMain.Size = new System.Drawing.Size(984, 27);
+            this.tlsMain.Size = new System.Drawing.Size(984, 25);
             this.tlsMain.TabIndex = 3;
             // 
             // tsbOpen
@@ -360,8 +360,8 @@
             this.tsbOpen.Image = global::Kukkii.Properties.Resources.menu_open;
             this.tsbOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOpen.Name = "tsbOpen";
-            this.tsbOpen.Size = new System.Drawing.Size(23, 22);
-            this.tsbOpen.Text = "Open";
+            this.tsbOpen.Size = new System.Drawing.Size(23, 20);
+            this.tsbOpen.Text = "打开";
             this.tsbOpen.Click += new System.EventHandler(this.tsbOpen_Click);
             // 
             // tsbSave
@@ -371,8 +371,8 @@
             this.tsbSave.Image = global::Kukkii.Properties.Resources.menu_save;
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(23, 22);
-            this.tsbSave.Text = "Save";
+            this.tsbSave.Size = new System.Drawing.Size(23, 20);
+            this.tsbSave.Text = "保存";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
             // tsbSaveAs
@@ -382,14 +382,14 @@
             this.tsbSaveAs.Image = global::Kukkii.Properties.Resources.menu_save_as;
             this.tsbSaveAs.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSaveAs.Name = "tsbSaveAs";
-            this.tsbSaveAs.Size = new System.Drawing.Size(23, 22);
-            this.tsbSaveAs.Text = "Save As...";
+            this.tsbSaveAs.Size = new System.Drawing.Size(23, 20);
+            this.tsbSaveAs.Text = "另存为...";
             this.tsbSaveAs.Click += new System.EventHandler(this.tsbSaveAs_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
             // 
             // tsbExportPNG
             // 
@@ -398,8 +398,8 @@
             this.tsbExportPNG.Image = global::Kukkii.Properties.Resources.menu_export;
             this.tsbExportPNG.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExportPNG.Name = "tsbExportPNG";
-            this.tsbExportPNG.Size = new System.Drawing.Size(23, 22);
-            this.tsbExportPNG.Text = "Export PNG";
+            this.tsbExportPNG.Size = new System.Drawing.Size(23, 20);
+            this.tsbExportPNG.Text = "提取 PNG";
             this.tsbExportPNG.Click += new System.EventHandler(this.tsbExportPNG_Click);
             // 
             // tsbImportPNG
@@ -409,14 +409,14 @@
             this.tsbImportPNG.Image = global::Kukkii.Properties.Resources.import_import;
             this.tsbImportPNG.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbImportPNG.Name = "tsbImportPNG";
-            this.tsbImportPNG.Size = new System.Drawing.Size(23, 22);
-            this.tsbImportPNG.Text = "Import PNG";
+            this.tsbImportPNG.Size = new System.Drawing.Size(23, 20);
+            this.tsbImportPNG.Text = "嵌入 PNG";
             this.tsbImportPNG.Click += new System.EventHandler(this.tsbImportPNG_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
             // 
             // tsbBatchExport
             // 
@@ -424,8 +424,8 @@
             this.tsbBatchExport.Image = global::Kukkii.Properties.Resources.menu_batch_export;
             this.tsbBatchExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBatchExport.Name = "tsbBatchExport";
-            this.tsbBatchExport.Size = new System.Drawing.Size(23, 22);
-            this.tsbBatchExport.Text = "Batch Export PNG";
+            this.tsbBatchExport.Size = new System.Drawing.Size(23, 20);
+            this.tsbBatchExport.Text = "批量提取 PNG";
             this.tsbBatchExport.Click += new System.EventHandler(this.tsbBatchExport_Click);
             // 
             // tsbBatchImport
@@ -434,8 +434,8 @@
             this.tsbBatchImport.Image = global::Kukkii.Properties.Resources.menu_batch_import;
             this.tsbBatchImport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBatchImport.Name = "tsbBatchImport";
-            this.tsbBatchImport.Size = new System.Drawing.Size(23, 22);
-            this.tsbBatchImport.Text = "Batch Import PNG";
+            this.tsbBatchImport.Size = new System.Drawing.Size(23, 20);
+            this.tsbBatchImport.Text = "批量嵌入 PNG";
             this.tsbBatchImport.Click += new System.EventHandler(this.tsbBatchImport_Click);
             // 
             // tsbBatchScanSubdirectories
@@ -444,7 +444,7 @@
             this.tsbBatchScanSubdirectories.Image = global::Kukkii.Properties.Resources.menu_scan_subdirectories_off;
             this.tsbBatchScanSubdirectories.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBatchScanSubdirectories.Name = "tsbBatchScanSubdirectories";
-            this.tsbBatchScanSubdirectories.Size = new System.Drawing.Size(23, 22);
+            this.tsbBatchScanSubdirectories.Size = new System.Drawing.Size(23, 20);
             this.tsbBatchScanSubdirectories.Text = "Don\'t Scan Sub-directories";
             this.tsbBatchScanSubdirectories.Click += new System.EventHandler(this.tsbBatchScanSubdirectories_Click);
             // 
@@ -454,7 +454,7 @@
             this.tsbKarameru.Image = global::Kukkii.Properties.Resources.karameru;
             this.tsbKarameru.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbKarameru.Name = "tsbKarameru";
-            this.tsbKarameru.Size = new System.Drawing.Size(78, 22);
+            this.tsbKarameru.Size = new System.Drawing.Size(85, 20);
             this.tsbKarameru.Text = "Karameru";
             this.tsbKarameru.Click += new System.EventHandler(this.tsbKarameru_Click);
             // 
@@ -464,7 +464,7 @@
             this.tsbKuriimu.Image = global::Kukkii.Properties.Resources.kuriimu;
             this.tsbKuriimu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbKuriimu.Name = "tsbKuriimu";
-            this.tsbKuriimu.Size = new System.Drawing.Size(69, 22);
+            this.tsbKuriimu.Size = new System.Drawing.Size(72, 20);
             this.tsbKuriimu.Text = "Kuriimu";
             this.tsbKuriimu.ToolTipText = "Kuriimu";
             this.tsbKuriimu.Click += new System.EventHandler(this.tsbKuriimu_Click);
@@ -472,7 +472,7 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 23);
             // 
             // tsbGridColor1
             // 
@@ -481,8 +481,8 @@
             this.tsbGridColor1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tsbGridColor1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbGridColor1.Name = "tsbGridColor1";
-            this.tsbGridColor1.Size = new System.Drawing.Size(13, 22);
-            this.tsbGridColor1.Text = "Grid Color 1";
+            this.tsbGridColor1.Size = new System.Drawing.Size(13, 20);
+            this.tsbGridColor1.Text = "网格颜色 1";
             this.tsbGridColor1.Click += new System.EventHandler(this.tsbGridColor1_Click);
             // 
             // tsbGridColor2
@@ -490,8 +490,8 @@
             this.tsbGridColor2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbGridColor2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbGridColor2.Name = "tsbGridColor2";
-            this.tsbGridColor2.Size = new System.Drawing.Size(13, 22);
-            this.tsbGridColor2.Text = "Grid Color 2";
+            this.tsbGridColor2.Size = new System.Drawing.Size(13, 20);
+            this.tsbGridColor2.Text = "网格颜色 2";
             this.tsbGridColor2.Click += new System.EventHandler(this.tsbGridColor2_Click);
             // 
             // tsbImageBorderStyle
@@ -499,27 +499,27 @@
             this.tsbImageBorderStyle.Image = global::Kukkii.Properties.Resources.menu_border_none;
             this.tsbImageBorderStyle.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbImageBorderStyle.Name = "tsbImageBorderStyle";
-            this.tsbImageBorderStyle.Size = new System.Drawing.Size(65, 22);
-            this.tsbImageBorderStyle.Text = "None";
-            this.tsbImageBorderStyle.ToolTipText = "Image Border Style";
+            this.tsbImageBorderStyle.Size = new System.Drawing.Size(49, 20);
+            this.tsbImageBorderStyle.Text = "无";
+            this.tsbImageBorderStyle.ToolTipText = "图像边框样式";
             // 
             // tsbImageBorderColor
             // 
             this.tsbImageBorderColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbImageBorderColor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbImageBorderColor.Name = "tsbImageBorderColor";
-            this.tsbImageBorderColor.Size = new System.Drawing.Size(13, 22);
-            this.tsbImageBorderColor.Text = "Image Border Color";
+            this.tsbImageBorderColor.Size = new System.Drawing.Size(13, 20);
+            this.tsbImageBorderColor.Text = "图像边框颜色";
             this.tsbImageBorderColor.Click += new System.EventHandler(this.tsbImageBorderColor_Click);
             // 
             // pnlMain
             // 
             this.pnlMain.Controls.Add(this.splMain);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(0, 51);
+            this.pnlMain.Location = new System.Drawing.Point(0, 50);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Padding = new System.Windows.Forms.Padding(6);
-            this.pnlMain.Size = new System.Drawing.Size(984, 611);
+            this.pnlMain.Size = new System.Drawing.Size(984, 561);
             this.pnlMain.TabIndex = 4;
             // 
             // splMain
@@ -536,7 +536,7 @@
             // splMain.Panel2
             // 
             this.splMain.Panel2.Controls.Add(this.splProperties);
-            this.splMain.Size = new System.Drawing.Size(972, 599);
+            this.splMain.Size = new System.Drawing.Size(972, 549);
             this.splMain.SplitterDistance = 740;
             this.splMain.TabIndex = 0;
             // 
@@ -552,7 +552,7 @@
             this.imbPreview.Location = new System.Drawing.Point(0, 0);
             this.imbPreview.Name = "imbPreview";
             this.imbPreview.SelectionMode = Cyotek.Windows.Forms.ImageBoxSelectionMode.Zoom;
-            this.imbPreview.Size = new System.Drawing.Size(740, 572);
+            this.imbPreview.Size = new System.Drawing.Size(740, 524);
             this.imbPreview.TabIndex = 6;
             this.imbPreview.Zoomed += new System.EventHandler<Cyotek.Windows.Forms.ImageBoxZoomEventArgs>(this.imbPreview_Zoomed);
             this.imbPreview.KeyDown += new System.Windows.Forms.KeyEventHandler(this.imbPreview_KeyDown);
@@ -564,14 +564,14 @@
             this.cmsPreview.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsPreviewCopy});
             this.cmsPreview.Name = "cmsPreview";
-            this.cmsPreview.Size = new System.Drawing.Size(103, 26);
+            this.cmsPreview.Size = new System.Drawing.Size(107, 26);
             // 
             // cmsPreviewCopy
             // 
             this.cmsPreviewCopy.Image = global::Kukkii.Properties.Resources.menu_copy;
             this.cmsPreviewCopy.Name = "cmsPreviewCopy";
-            this.cmsPreviewCopy.Size = new System.Drawing.Size(102, 22);
-            this.cmsPreviewCopy.Text = "&Copy";
+            this.cmsPreviewCopy.Size = new System.Drawing.Size(106, 22);
+            this.cmsPreviewCopy.Text = "&复制";
             this.cmsPreviewCopy.Click += new System.EventHandler(this.cmsPreviewCopy_Click);
             // 
             // tlsTools
@@ -583,10 +583,10 @@
             this.tlsTools.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslZoom,
             this.tslTool});
-            this.tlsTools.Location = new System.Drawing.Point(0, 572);
+            this.tlsTools.Location = new System.Drawing.Point(0, 524);
             this.tlsTools.Name = "tlsTools";
             this.tlsTools.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsTools.Size = new System.Drawing.Size(740, 27);
+            this.tlsTools.Size = new System.Drawing.Size(740, 25);
             this.tlsTools.TabIndex = 7;
             // 
             // tslZoom
@@ -594,8 +594,8 @@
             this.tslZoom.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tslZoom.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tslZoom.Name = "tslZoom";
-            this.tslZoom.Size = new System.Drawing.Size(73, 22);
-            this.tslZoom.Text = "Zoom: 100%";
+            this.tslZoom.Size = new System.Drawing.Size(71, 20);
+            this.tslZoom.Text = "缩放: 100%";
             // 
             // tslTool
             // 
@@ -603,8 +603,8 @@
             this.tslTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tslTool.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tslTool.Name = "tslTool";
-            this.tslTool.Size = new System.Drawing.Size(67, 22);
-            this.tslTool.Text = "Tool: Zoom";
+            this.tslTool.Size = new System.Drawing.Size(63, 20);
+            this.tslTool.Text = "工具: 缩放";
             // 
             // splProperties
             // 
@@ -621,8 +621,8 @@
             // 
             this.splProperties.Panel2.Controls.Add(this.pptImageProperties);
             this.splProperties.Panel2.Controls.Add(this.tlsProperties);
-            this.splProperties.Size = new System.Drawing.Size(228, 599);
-            this.splProperties.SplitterDistance = 300;
+            this.splProperties.Size = new System.Drawing.Size(228, 549);
+            this.splProperties.SplitterDistance = 274;
             this.splProperties.TabIndex = 2;
             // 
             // treBitmaps
@@ -638,7 +638,7 @@
             this.treBitmaps.ShowLines = false;
             this.treBitmaps.ShowPlusMinus = false;
             this.treBitmaps.ShowRootLines = false;
-            this.treBitmaps.Size = new System.Drawing.Size(228, 300);
+            this.treBitmaps.Size = new System.Drawing.Size(228, 274);
             this.treBitmaps.TabIndex = 1;
             this.treBitmaps.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treBitmaps_AfterSelect);
             this.treBitmaps.MouseEnter += new System.EventHandler(this.treBitmaps_MouseEnter);
@@ -653,9 +653,9 @@
             // 
             this.pptImageProperties.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pptImageProperties.LineColor = System.Drawing.SystemColors.ControlDark;
-            this.pptImageProperties.Location = new System.Drawing.Point(0, 27);
+            this.pptImageProperties.Location = new System.Drawing.Point(0, 25);
             this.pptImageProperties.Name = "pptImageProperties";
-            this.pptImageProperties.Size = new System.Drawing.Size(228, 268);
+            this.pptImageProperties.Size = new System.Drawing.Size(228, 246);
             this.pptImageProperties.TabIndex = 0;
             this.pptImageProperties.ToolbarVisible = false;
             // 
@@ -670,7 +670,7 @@
             this.tlsProperties.Location = new System.Drawing.Point(0, 0);
             this.tlsProperties.Name = "tlsProperties";
             this.tlsProperties.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsProperties.Size = new System.Drawing.Size(228, 27);
+            this.tlsProperties.Size = new System.Drawing.Size(228, 25);
             this.tlsProperties.TabIndex = 8;
             // 
             // tsbExtendedProperties
@@ -681,8 +681,8 @@
             this.tsbExtendedProperties.Image = global::Kukkii.Properties.Resources.menu_properties;
             this.tsbExtendedProperties.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExtendedProperties.Name = "tsbExtendedProperties";
-            this.tsbExtendedProperties.Size = new System.Drawing.Size(23, 22);
-            this.tsbExtendedProperties.Text = "Extended Properties";
+            this.tsbExtendedProperties.Size = new System.Drawing.Size(23, 20);
+            this.tsbExtendedProperties.Text = "扩展属性";
             this.tsbExtendedProperties.Click += new System.EventHandler(this.tsbExtendedProperties_Click);
             // 
             // tslProperties
@@ -690,15 +690,15 @@
             this.tslProperties.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tslProperties.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tslProperties.Name = "tslProperties";
-            this.tslProperties.Size = new System.Drawing.Size(63, 22);
-            this.tslProperties.Text = "Properties:";
+            this.tslProperties.Size = new System.Drawing.Size(35, 20);
+            this.tslProperties.Text = "属性:";
             // 
             // Converter
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 662);
+            this.ClientSize = new System.Drawing.Size(984, 611);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.tlsMain);
             this.Controls.Add(this.mnuMain);

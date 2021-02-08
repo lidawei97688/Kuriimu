@@ -37,30 +37,30 @@
             // lblQuestion
             // 
             this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblQuestion.Location = new System.Drawing.Point(8, 10);
+            this.lblQuestion.Location = new System.Drawing.Point(8, 9);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(175, 22);
+            this.lblQuestion.Size = new System.Drawing.Size(175, 20);
             this.lblQuestion.TabIndex = 0;
-            this.lblQuestion.Text = "Response:";
+            this.lblQuestion.Text = "回答:";
             this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtResponse
             // 
             this.txtResponse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtResponse.Location = new System.Drawing.Point(189, 12);
+            this.txtResponse.Location = new System.Drawing.Point(189, 11);
             this.txtResponse.Name = "txtResponse";
-            this.txtResponse.Size = new System.Drawing.Size(250, 20);
+            this.txtResponse.Size = new System.Drawing.Size(250, 21);
             this.txtResponse.TabIndex = 1;
             // 
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(348, 43);
+            this.btnOK.Location = new System.Drawing.Point(348, 40);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 21);
             this.btnOK.TabIndex = 2;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -68,21 +68,21 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(429, 43);
+            this.btnCancel.Location = new System.Drawing.Point(429, 40);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // InputBox
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(510, 73);
+            this.ClientSize = new System.Drawing.Size(510, 67);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtResponse);
@@ -92,7 +92,7 @@
             this.MinimizeBox = false;
             this.Name = "InputBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "InputBox";
+            this.Text = "输入框";
             this.Load += new System.EventHandler(this.Name_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -17,7 +17,7 @@ namespace archive_aatri.aabin
         public string Name => "AABIN";
         public string Description => "Ace Attorney bin";
         public string Extension => "*.inc";
-        public string About => "This is the Ace Attorney bin archive manager for Karameru.";
+        public string About => "这是 Karameru 的 Ace Attorney bin 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

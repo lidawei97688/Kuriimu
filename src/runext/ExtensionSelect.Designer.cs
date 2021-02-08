@@ -39,11 +39,11 @@
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.Image = global::runext.Properties.Resources.menu_run;
-            this.btnOK.Location = new System.Drawing.Point(116, 227);
+            this.btnOK.Location = new System.Drawing.Point(116, 210);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 21);
             this.btnOK.TabIndex = 1;
-            this.btnOK.Text = "Run";
+            this.btnOK.Text = "运行";
             this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOK.UseVisualStyleBackColor = true;
@@ -53,11 +53,11 @@
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.Image = global::runext.Properties.Resources.menu_exit;
-            this.btnExit.Location = new System.Drawing.Point(197, 227);
+            this.btnExit.Location = new System.Drawing.Point(197, 210);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(75, 21);
             this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "退出";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExit.UseVisualStyleBackColor = true;
@@ -71,13 +71,13 @@
             this.treExtensions.ImageIndex = 0;
             this.treExtensions.ImageList = this.imgList;
             this.treExtensions.ItemHeight = 18;
-            this.treExtensions.Location = new System.Drawing.Point(12, 12);
+            this.treExtensions.Location = new System.Drawing.Point(12, 11);
             this.treExtensions.Name = "treExtensions";
             this.treExtensions.SelectedImageIndex = 0;
             this.treExtensions.ShowLines = false;
             this.treExtensions.ShowPlusMinus = false;
             this.treExtensions.ShowRootLines = false;
-            this.treExtensions.Size = new System.Drawing.Size(260, 209);
+            this.treExtensions.Size = new System.Drawing.Size(260, 193);
             this.treExtensions.TabIndex = 3;
             // 
             // imgList
@@ -86,20 +86,20 @@
             this.imgList.ImageSize = new System.Drawing.Size(16, 16);
             this.imgList.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // frmExtensionSelect
+            // ExtensionSelect
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 242);
             this.Controls.Add(this.treExtensions);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmExtensionSelect";
+            this.Name = "ExtensionSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Extension Select";
+            this.Text = "扩展选择";
             this.Load += new System.EventHandler(this.ExtensionSelect_Load);
             this.ResumeLayout(false);
 

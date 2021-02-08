@@ -16,45 +16,45 @@ namespace Kontract.UI
             tsb.DropDownItems.Clear();
 
             //--------General---------
-            tsb.DropDownItems.Add(new ToolStripMenuItem("General", null));
+            tsb.DropDownItems.Add(new ToolStripMenuItem("通用", null));
             tsb2 = (ToolStripMenuItem)tsb.DropDownItems[0];
             //  GZip
             tsb2.DropDownItems.Add(new ToolStripMenuItem("GZip", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.GZip;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress Size First", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩（尺寸优先）", null, Compress));
             tsb3.DropDownItems[1].Tag = Compression.GZipSF;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[2].Tag = Compression.GZip;
             //  ZLib
             tsb2.DropDownItems.Add(new ToolStripMenuItem("ZLib", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[1];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.ZLib;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[1].Tag = Compression.ZLib;
             //  LZ4
             tsb2.DropDownItems.Add(new ToolStripMenuItem("LZ4", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[2];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.LZ4;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[1].Tag = Compression.LZ4;
             //  LZ4 Preceding Size
             tsb2.DropDownItems.Add(new ToolStripMenuItem("LZ4 Preceding Size", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[3];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.LZ4Prec;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[1].Tag = Compression.LZ4Prec;
 
             //-------Nintendo---------
-            tsb.DropDownItems.Add(new ToolStripMenuItem("Nintendo", null));
+            tsb.DropDownItems.Add(new ToolStripMenuItem("任天堂", null));
             tsb2 = (ToolStripMenuItem)tsb.DropDownItems[1];
 
             //  Compress
-            tsb2.DropDownItems.Add(new ToolStripMenuItem("Compress", null));
+            tsb2.DropDownItems.Add(new ToolStripMenuItem("压缩", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
             //    LZ10
             tsb3.DropDownItems.Add(new ToolStripMenuItem("LZ10", null, Compress));
@@ -110,10 +110,10 @@ namespace Kontract.UI
             tsb4.DropDownItems[1].Tag = Compression.Yaz0BE;
 
             //  Decompress
-            tsb2.DropDownItems.Add(new ToolStripMenuItem("Decompress", null));
+            tsb2.DropDownItems.Add(new ToolStripMenuItem("解压缩", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[1];
             //    General
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("General", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("通用", null, Decompress));
             tsb3.DropDownItems[0].Tag = Compression.Nintendo;
             //    LZ77
             tsb3.DropDownItems.Add(new ToolStripMenuItem("LZ77", null, Decompress));
@@ -152,7 +152,7 @@ namespace Kontract.UI
             tsb2 = (ToolStripMenuItem)tsb.DropDownItems[2];
 
             //  Compress
-            tsb2.DropDownItems.Add(new ToolStripMenuItem("Compress", null));
+            tsb2.DropDownItems.Add(new ToolStripMenuItem("压缩", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
             //    LZ10
             tsb3.DropDownItems.Add(new ToolStripMenuItem("LZ10", null, Compress));
@@ -169,7 +169,7 @@ namespace Kontract.UI
             tsb3.DropDownItems[2].Tag = Compression.L5RLE;
 
             //  Decompress
-            tsb2.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb2.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb2.DropDownItems[1].Tag = Compression.Level5;
 
             //-------Specific---------
@@ -179,30 +179,30 @@ namespace Kontract.UI
             //    LZECD
             tsb2.DropDownItems.Add(new ToolStripMenuItem("LZECD", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.LZECD;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[1].Tag = Compression.LZECD;
             //    LZ10VLE
             tsb2.DropDownItems.Add(new ToolStripMenuItem("LZ10VLE", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[1];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.LZ10VLE;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[1].Tag = Compression.LZ10VLE;
             //    PSVSpikeChun
             tsb2.DropDownItems.Add(new ToolStripMenuItem("PSVita SpikeChun", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[2];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.PSVSpikeChun;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[1].Tag = Compression.PSVSpikeChun;
             //    PSVSpikeChunNew
             tsb2.DropDownItems.Add(new ToolStripMenuItem("PSVita SpikeChun New", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[3];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Compress", null, Compress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("压缩", null, Compress));
             tsb3.DropDownItems[0].Tag = Compression.PSVSpikeChunNew;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decompress", null, Decompress));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解压缩", null, Decompress));
             tsb3.DropDownItems[1].Tag = Compression.PSVSpikeChunNew;
         }
 
@@ -210,7 +210,7 @@ namespace Kontract.UI
         {
             var tsi = sender as ToolStripMenuItem;
 
-            if (!Shared.PrepareFiles("Open a " + tsi?.Tag + " compressed file...", "Save your decompressed file...", ".decomp", out var openFile, out var saveFile)) return;
+            if (!Shared.PrepareFiles("打开一个 " + tsi?.Tag + " 压缩的文件...", "保存解压缩的文件到...", ".decomp", out var openFile, out var saveFile)) return;
 
             try
             {
@@ -283,14 +283,14 @@ namespace Kontract.UI
                 return;
             }
 
-            MessageBox.Show($"Successfully decompressed {Path.GetFileName(openFile.Name)}.", tsi.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"已成功解压缩 {Path.GetFileName(openFile.Name)}.", tsi.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public static void Compress(object sender, EventArgs e)
         {
             var tsi = sender as ToolStripMenuItem;
 
-            if (!Shared.PrepareFiles("Open a decompressed " + tsi?.Tag + "file...", "Save your compressed file...", ".decomp", out var openFile, out var saveFile, true)) return;
+            if (!Shared.PrepareFiles("打开一个解压缩的 " + tsi?.Tag + "文件...", "保存已压缩的文件到...", ".decomp", out var openFile, out var saveFile, true)) return;
 
             try
             {
@@ -387,7 +387,7 @@ namespace Kontract.UI
                 return;
             }
 
-            MessageBox.Show($"Successfully compressed {Path.GetFileName(openFile.Name)}.", tsi.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"已成功压缩 {Path.GetFileName(openFile.Name)}.", tsi.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public enum Compression : short

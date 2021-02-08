@@ -192,8 +192,7 @@ namespace Kontract.Compression
             int src = input.Length;
             int dest = input.Length;    // Will be input.Length - compressedSize
 
-            var fileName = @"D:\Users\Kirito\Desktop\otherMatches.bin";
-            var file = File.Open(fileName, FileMode.Create);
+            var file = File.Open(nameof(input), FileMode.Create);
             using (var br = new BinaryWriter(file))
                 while (src > 0 && dest > 0)
                 {

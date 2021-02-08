@@ -51,16 +51,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manager.cs">
+    <Compile Include="..\..\..\Manager.cs">
       <SubType>Form</SubType>
+      <Link>Manager.cs</Link>
     </Compile>
-    <Compile Include="Manager.Designer.cs">
+    <Compile Include="..\..\..\Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
+      <Link>Manager.Designer.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Manager.resx">
+    <EmbeddedResource Include="..\..\..\Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
+      <Link>Manager.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

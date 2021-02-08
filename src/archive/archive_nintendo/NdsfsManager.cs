@@ -17,7 +17,7 @@ namespace archive_nintendo.NDSFS
         public string Name => "NDSFS";
         public string Description => "Nintendo DS File System";
         public string Extension => "*.nds";
-        public string About => "This is the NDS FS archive manager for Karameru.";
+        public string About => "这是 Karameru 的 NDS文件系统 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

@@ -169,7 +169,7 @@ namespace Kontract.Encryption
                 }
                 else
                 {
-                    throw new Exception("Invalid IV size.");
+                    throw new Exception("无效的 IV 尺寸.");
                 }
             }
         }

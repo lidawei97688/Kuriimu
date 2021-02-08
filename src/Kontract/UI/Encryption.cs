@@ -18,27 +18,27 @@ namespace Kontract.UI
             tsb.DropDownItems.Clear();
 
             //General
-            tsb.DropDownItems.Add(new ToolStripMenuItem("General", null));
+            tsb.DropDownItems.Add(new ToolStripMenuItem("通用", null));
             tsb2 = (ToolStripMenuItem)tsb.DropDownItems[0];
             tsb2.DropDownItems.Add(new ToolStripMenuItem("Blowfish", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
             tsb3.DropDownItems.Add(new ToolStripMenuItem("CBC", null));
             tsb4 = (ToolStripMenuItem)tsb3.DropDownItems[0];
-            tsb4.DropDownItems.Add(new ToolStripMenuItem("Encrypt", null, Encrypt));
+            tsb4.DropDownItems.Add(new ToolStripMenuItem("加密", null, Encrypt));
             tsb4.DropDownItems[0].Tag = Types.BlowFishCBC;
-            tsb4.DropDownItems.Add(new ToolStripMenuItem("Decrypt", null, Decrypt));
+            tsb4.DropDownItems.Add(new ToolStripMenuItem("解密", null, Decrypt));
             tsb4.DropDownItems[1].Tag = Types.BlowFishCBC;
             tsb3.DropDownItems.Add(new ToolStripMenuItem("EBC", null));
             tsb4 = (ToolStripMenuItem)tsb3.DropDownItems[1];
-            tsb4.DropDownItems.Add(new ToolStripMenuItem("Encrypt", null, Encrypt));
+            tsb4.DropDownItems.Add(new ToolStripMenuItem("加密", null, Encrypt));
             tsb4.DropDownItems[0].Tag = Types.BlowFishECB;
-            tsb4.DropDownItems.Add(new ToolStripMenuItem("Decrypt", null, Decrypt));
+            tsb4.DropDownItems.Add(new ToolStripMenuItem("解密", null, Decrypt));
             tsb4.DropDownItems[1].Tag = Types.BlowFishECB;
 
             // 3DS
             tsb.DropDownItems.Add(new ToolStripMenuItem("3DS", null));
             tsb2 = (ToolStripMenuItem)tsb.DropDownItems[1];
-            tsb2.DropDownItems.Add(new ToolStripMenuItem("Decrypt", null));
+            tsb2.DropDownItems.Add(new ToolStripMenuItem("解密", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
             tsb3.DropDownItems.Add(new ToolStripMenuItem(".3ds", null, Decrypt));
             tsb3.DropDownItems[0].Tag = Types.Normal;
@@ -58,15 +58,15 @@ namespace Kontract.UI
             tsb2 = (ToolStripMenuItem)tsb.DropDownItems[2];
             tsb2.DropDownItems.Add(new ToolStripMenuItem("MT Framework", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Encrypt", null, Encrypt));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("加密", null, Encrypt));
             tsb3.DropDownItems[0].Tag = Types.MTMobile;
-            tsb3.DropDownItems.Add(new ToolStripMenuItem("Decrypt", null, Decrypt));
+            tsb3.DropDownItems.Add(new ToolStripMenuItem("解密", null, Decrypt));
             tsb3.DropDownItems[1].Tag = Types.MTMobile;
 
             //Switch
             tsb.DropDownItems.Add(new ToolStripMenuItem("Switch", null));
             tsb2 = (ToolStripMenuItem)tsb.DropDownItems[3];
-            tsb2.DropDownItems.Add(new ToolStripMenuItem("Decrypt", null));
+            tsb2.DropDownItems.Add(new ToolStripMenuItem("解密", null));
             tsb3 = (ToolStripMenuItem)tsb2.DropDownItems[0];
             tsb3.DropDownItems.Add(new ToolStripMenuItem(".xci", null, Decrypt));
             tsb3.DropDownItems[0].Tag = Types.NSW_XCI;
@@ -83,15 +83,15 @@ namespace Kontract.UI
             FileStream saveFile = null;
             if ((Types)tsi.Tag != Types.NSW_XCI && (Types)tsi.Tag != Types.NSW_NCA)
             {
-                if (!Shared.PrepareFiles("Open an encrypted " + name + " file...", "Save your decrypted file...", ".dec", out openFile, out saveFile))
+                if (!Shared.PrepareFiles("打开一个加密的 " + name + " 文件...", "保存解密的文件到...", ".dec", out openFile, out saveFile))
                     return;
             }
             else
             {
                 var ofd = new OpenFileDialog
                 {
-                    Title = "Open an encrypted " + name + " file...",
-                    Filter = "All Files (*.*)|*.*"
+                    Title = "打开一个加密的 " + name + " 文件...",
+                    Filter = "所有文件 (*.*)|*.*"
                 };
                 if (ofd.ShowDialog() == DialogResult.OK)
                     openFile = File.Open(ofd.FileName, FileMode.Open, FileAccess.ReadWrite);
@@ -109,9 +109,9 @@ namespace Kontract.UI
                         case Types.BlowFishCBC:
                             using (var outFs = new BinaryWriterX(saveFile))
                             {
-                                var key = InputBox.Show("Input decryption key:", "Decrypt Blowfish");
+                                var key = InputBox.Show("输入解密密钥:", "解密 Blowfish");
 
-                                if (key == String.Empty) throw new Exception("Key can't be empty!");
+                                if (key == String.Empty) throw new Exception("密钥不能为空！");
                                 var bf = new BlowFish(key);
                                 outFs.Write(bf.Decrypt_CBC(openBr.ReadAllBytes()));
                             }
@@ -119,9 +119,9 @@ namespace Kontract.UI
                         case Types.BlowFishECB:
                             using (var outFs = new BinaryWriterX(saveFile))
                             {
-                                var key = InputBox.Show("Input decryption key:", "Decrypt Blowfish");
+                                var key = InputBox.Show("输入解密密钥:", "解密 Blowfish");
 
-                                if (key == String.Empty) throw new Exception("Key can't be empty!");
+                                if (key == String.Empty) throw new Exception("密钥不能为空！");
                                 var bf = new BlowFish(key);
                                 outFs.Write(bf.Decrypt_ECB(openBr.ReadAllBytes()));
                             }
@@ -129,10 +129,10 @@ namespace Kontract.UI
                         case Types.MTMobile:
                             using (var outFs = new BinaryWriterX(saveFile))
                             {
-                                var key1 = InputBox.Show("Input 1st decryption key:", "Decrypt MTMobile");
-                                var key2 = InputBox.Show("Input 2nd decryption key:", "Decrypt MTMobile");
+                                var key1 = InputBox.Show("输入第一个解密密钥:", "解密 MTMobile");
+                                var key2 = InputBox.Show("输入第二个解密密钥:", "解密 MTMobile");
 
-                                if (key1 == String.Empty || key2 == String.Empty) throw new Exception("Keys can't be empty!");
+                                if (key1 == String.Empty || key2 == String.Empty) throw new Exception("密钥不能为空！");
                                 outFs.Write(MTFramework.Decrypt(openBr.BaseStream, key1, key2));
                             }
                             break;
@@ -185,7 +185,7 @@ namespace Kontract.UI
                             
                             Switch.DecryptXCI(openBr.BaseStream);
 
-                            MessageBox.Show("XCI Header and all NCA's were decrypted successfully!", "Decryption Success", MessageBoxButtons.OK);
+                            MessageBox.Show("XCI Header 和所有 NCA 已成功解密！", "解密成功", MessageBoxButtons.OK);
                             show = false;
                             break;
                         case Types.NSW_NCA:
@@ -193,14 +193,14 @@ namespace Kontract.UI
 
                             Switch.DecryptNCA(openBr.BaseStream, 0);
 
-                            MessageBox.Show("NCA was decrypted successfully!", "Decryption Success", MessageBoxButtons.OK);
+                            MessageBox.Show("NCA 已成功解密！", "解密成功", MessageBoxButtons.OK);
                             show = false;
                             break;
                     }
                 }
 
                 if (show)
-                    MessageBox.Show($"Successfully decrypted {Path.GetFileName(openFile.Name)}.", tsi?.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"已成功解密 {Path.GetFileName(openFile.Name)}.", tsi?.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -213,7 +213,7 @@ namespace Kontract.UI
         {
             var tsi = sender as ToolStripMenuItem;
 
-            if (!Shared.PrepareFiles("Open a decrypted " + tsi?.Tag + " file...", "Save your encrypted file...", ".dec", out var openFile, out var saveFile, true)) return;
+            if (!Shared.PrepareFiles("打开一个解密的 " + tsi?.Tag + " 文件...", "保存加密的文件到...", ".dec", out var openFile, out var saveFile, true)) return;
 
             try
             {
@@ -222,29 +222,29 @@ namespace Kontract.UI
                     switch (tsi?.Tag)
                     {
                         case Types.BlowFishCBC:
-                            var key = InputBox.Show("Input encryption key:", "Encrypt Blowfish");
+                            var key = InputBox.Show("输入加密秘钥:", "加密 Blowfish");
 
-                            if (key == String.Empty) throw new Exception("Key can't be empty!");
+                            if (key == String.Empty) throw new Exception("密钥不能为空！");
                             var bf = new BlowFish(key);
                             outFs.Write(bf.Encrypt_CBC(openFs.ReadAllBytes()));
                             break;
                         case Types.BlowFishECB:
-                            key = InputBox.Show("Input encryption key:", "Encrypt Blowfish");
+                            key = InputBox.Show("输入加密秘钥:", "加密 Blowfish");
 
-                            if (key == String.Empty) throw new Exception("Key can't be empty!");
+                            if (key == String.Empty) throw new Exception("密钥不能为空！");
                             bf = new BlowFish(key);
                             outFs.Write(bf.Encrypt_ECB(openFs.ReadAllBytes()));
                             break;
                         case Types.MTMobile:
-                            var key1 = InputBox.Show("Input 1st encryption key:", "Encrypt MTMobile");
-                            var key2 = InputBox.Show("Input 2nd encryption key:", "Encrypt MTMobile");
+                            var key1 = InputBox.Show("输入第一个加密秘钥:", "加密 MTMobile");
+                            var key2 = InputBox.Show("输入第二个加密秘钥:", "加密 MTMobile");
 
-                            if (key1 == String.Empty || key2 == String.Empty) throw new Exception("Keys can't be empty!");
+                            if (key1 == String.Empty || key2 == String.Empty) throw new Exception("密钥不能为空！");
                             outFs.Write(MTFramework.Encrypt(openFs.BaseStream, key1, key2));
                             break;
                     }
 
-                MessageBox.Show($"Successfully encrypted {Path.GetFileName(openFile.Name)}.", tsi.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"已成功加密 {Path.GetFileName(openFile.Name)}.", tsi.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

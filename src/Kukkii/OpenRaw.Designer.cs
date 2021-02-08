@@ -57,9 +57,9 @@
             this.imbPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imbPreview.GridCellSize = 16;
             this.imbPreview.GridColor = System.Drawing.Color.Silver;
-            this.imbPreview.Location = new System.Drawing.Point(12, 12);
+            this.imbPreview.Location = new System.Drawing.Point(12, 11);
             this.imbPreview.Name = "imbPreview";
-            this.imbPreview.Size = new System.Drawing.Size(360, 276);
+            this.imbPreview.Size = new System.Drawing.Size(360, 255);
             this.imbPreview.TabIndex = 7;
             // 
             // cmbFormat
@@ -67,10 +67,10 @@
             this.cmbFormat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFormat.FormattingEnabled = true;
-            this.cmbFormat.Location = new System.Drawing.Point(101, 377);
+            this.cmbFormat.Location = new System.Drawing.Point(101, 348);
             this.cmbFormat.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFormat.Name = "cmbFormat";
-            this.cmbFormat.Size = new System.Drawing.Size(149, 21);
+            this.cmbFormat.Size = new System.Drawing.Size(149, 20);
             this.cmbFormat.TabIndex = 9;
             this.cmbFormat.SelectedIndexChanged += new System.EventHandler(this.cmbPixelFormat_SelectedIndexChanged);
             // 
@@ -78,44 +78,44 @@
             // 
             this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblName.Location = new System.Drawing.Point(31, 321);
+            this.lblName.Location = new System.Drawing.Point(31, 296);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(63, 20);
+            this.lblName.Size = new System.Drawing.Size(63, 18);
             this.lblName.TabIndex = 11;
-            this.lblName.Text = "Width:";
+            this.lblName.Text = "宽:";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label1.Location = new System.Drawing.Point(31, 349);
+            this.label1.Location = new System.Drawing.Point(31, 322);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.Size = new System.Drawing.Size(63, 18);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Height:";
+            this.label1.Text = "高:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label2.Location = new System.Drawing.Point(31, 377);
+            this.label2.Location = new System.Drawing.Point(31, 348);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 21);
+            this.label2.Size = new System.Drawing.Size(63, 19);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Format:";
+            this.label2.Text = "格式:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(271, 433);
+            this.btnSave.Location = new System.Drawing.Point(271, 400);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(101, 23);
+            this.btnSave.Size = new System.Drawing.Size(101, 21);
             this.btnSave.TabIndex = 14;
-            this.btnSave.Text = "Save as PNG";
+            this.btnSave.Text = "保存为 PNG";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -123,12 +123,12 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(271, 462);
+            this.btnCancel.Location = new System.Drawing.Point(271, 426);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(101, 23);
+            this.btnCancel.Size = new System.Drawing.Size(101, 21);
             this.btnCancel.TabIndex = 15;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -140,7 +140,7 @@
             0,
             0,
             0});
-            this.numWidth.Location = new System.Drawing.Point(101, 321);
+            this.numWidth.Location = new System.Drawing.Point(101, 296);
             this.numWidth.Margin = new System.Windows.Forms.Padding(4);
             this.numWidth.Maximum = new decimal(new int[] {
             2048,
@@ -148,7 +148,7 @@
             0,
             0});
             this.numWidth.Name = "numWidth";
-            this.numWidth.Size = new System.Drawing.Size(149, 20);
+            this.numWidth.Size = new System.Drawing.Size(149, 21);
             this.numWidth.TabIndex = 16;
             this.numWidth.Value = new decimal(new int[] {
             16,
@@ -165,7 +165,7 @@
             0,
             0,
             0});
-            this.numHeight.Location = new System.Drawing.Point(101, 349);
+            this.numHeight.Location = new System.Drawing.Point(101, 322);
             this.numHeight.Margin = new System.Windows.Forms.Padding(4);
             this.numHeight.Maximum = new decimal(new int[] {
             2048,
@@ -173,7 +173,7 @@
             0,
             0});
             this.numHeight.Name = "numHeight";
-            this.numHeight.Size = new System.Drawing.Size(149, 20);
+            this.numHeight.Size = new System.Drawing.Size(149, 21);
             this.numHeight.TabIndex = 17;
             this.numHeight.Value = new decimal(new int[] {
             16,
@@ -188,9 +188,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFilename.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblFilename.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblFilename.Location = new System.Drawing.Point(12, 291);
+            this.lblFilename.Location = new System.Drawing.Point(12, 269);
             this.lblFilename.Name = "lblFilename";
-            this.lblFilename.Size = new System.Drawing.Size(360, 22);
+            this.lblFilename.Size = new System.Drawing.Size(360, 20);
             this.lblFilename.TabIndex = 18;
             this.lblFilename.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -198,9 +198,9 @@
             // 
             this.chkZOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkZOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.chkZOrder.Location = new System.Drawing.Point(101, 463);
+            this.chkZOrder.Location = new System.Drawing.Point(101, 427);
             this.chkZOrder.Name = "chkZOrder";
-            this.chkZOrder.Size = new System.Drawing.Size(73, 20);
+            this.chkZOrder.Size = new System.Drawing.Size(73, 18);
             this.chkZOrder.TabIndex = 20;
             this.chkZOrder.Text = "Z-Order";
             this.chkZOrder.UseVisualStyleBackColor = true;
@@ -210,11 +210,11 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label3.Location = new System.Drawing.Point(31, 406);
+            this.label3.Location = new System.Drawing.Point(31, 375);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(63, 18);
             this.label3.TabIndex = 21;
-            this.label3.Text = "TileSize:";
+            this.label3.Text = "块尺寸:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tileSize
@@ -225,7 +225,7 @@
             0,
             0,
             0});
-            this.tileSize.Location = new System.Drawing.Point(101, 406);
+            this.tileSize.Location = new System.Drawing.Point(101, 375);
             this.tileSize.Margin = new System.Windows.Forms.Padding(4);
             this.tileSize.Maximum = new decimal(new int[] {
             2048,
@@ -233,7 +233,7 @@
             0,
             0});
             this.tileSize.Name = "tileSize";
-            this.tileSize.Size = new System.Drawing.Size(149, 20);
+            this.tileSize.Size = new System.Drawing.Size(149, 21);
             this.tileSize.TabIndex = 22;
             this.tileSize.Value = new decimal(new int[] {
             8,
@@ -245,12 +245,12 @@
             // btnSaveRaw
             // 
             this.btnSaveRaw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveRaw.Location = new System.Drawing.Point(271, 404);
+            this.btnSaveRaw.Location = new System.Drawing.Point(271, 373);
             this.btnSaveRaw.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveRaw.Name = "btnSaveRaw";
-            this.btnSaveRaw.Size = new System.Drawing.Size(101, 23);
+            this.btnSaveRaw.Size = new System.Drawing.Size(101, 21);
             this.btnSaveRaw.TabIndex = 23;
-            this.btnSaveRaw.Text = "Save as RAW";
+            this.btnSaveRaw.Text = "保存为 RAW";
             this.btnSaveRaw.UseVisualStyleBackColor = true;
             this.btnSaveRaw.Click += new System.EventHandler(this.btnSaveRaw_Click);
             // 
@@ -258,11 +258,11 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label4.Location = new System.Drawing.Point(11, 434);
+            this.label4.Location = new System.Drawing.Point(11, 401);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 21);
+            this.label4.Size = new System.Drawing.Size(83, 19);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Orientation:";
+            this.label4.Text = "方向:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cmbOrientation
@@ -270,18 +270,18 @@
             this.cmbOrientation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbOrientation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOrientation.FormattingEnabled = true;
-            this.cmbOrientation.Location = new System.Drawing.Point(101, 434);
+            this.cmbOrientation.Location = new System.Drawing.Point(101, 401);
             this.cmbOrientation.Margin = new System.Windows.Forms.Padding(4);
             this.cmbOrientation.Name = "cmbOrientation";
-            this.cmbOrientation.Size = new System.Drawing.Size(149, 21);
+            this.cmbOrientation.Size = new System.Drawing.Size(149, 20);
             this.cmbOrientation.TabIndex = 24;
             this.cmbOrientation.SelectedIndexChanged += new System.EventHandler(this.cmbOrientation_SelectedIndexChanged);
             // 
             // OpenRaw
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 497);
+            this.ClientSize = new System.Drawing.Size(384, 459);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbOrientation);
             this.Controls.Add(this.btnSaveRaw);
@@ -298,9 +298,9 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.cmbFormat);
             this.Controls.Add(this.imbPreview);
-            this.MinimumSize = new System.Drawing.Size(400, 460);
+            this.MinimumSize = new System.Drawing.Size(400, 428);
             this.Name = "OpenRaw";
-            this.Text = "Open Raw Image";
+            this.Text = "打开Raw图像";
             this.Load += new System.EventHandler(this.OpenRaw_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHeight)).EndInit();

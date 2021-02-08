@@ -51,6 +51,7 @@ namespace image_nintendo.BXLIM
             [9] = new RGBA(8, 8, 8, 8),
             [10] = new ETC1(),
             [11] = new ETC1(true),
+            [13] = new LA(0, 4),
             [18] = new LA(4, 0),
             [19] = new LA(0, 4),
         };

@@ -56,7 +56,7 @@ namespace Kontract
         private void btnOK_Click(object sender, EventArgs e)
         {
             if (txtResponse.Text.Trim().Length > MaxLength && MaxLength > 0)
-                MessageBox.Show("The name entered is too long. Valid names can only be " + MaxLength + " character(s) long.", "Input Too Long", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("输入的名称太长。有效名称的长度不能超过 " + MaxLength + " 个字符.", "输入名称过长", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
                 DialogResult = DialogResult.OK;
         }

@@ -80,7 +80,7 @@ namespace Kuriimu
         {
             if (_hasChanges)
             {
-                DialogResult dr = MessageBox.Show("Would you like to save your changes before exiting?", "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                DialogResult dr = MessageBox.Show("退出前是否保存更改？", "更改尚未保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
                 if (dr == DialogResult.Yes)
                 {
@@ -320,7 +320,7 @@ namespace Kuriimu
             {
                 TextEntry entry = (TextEntry)treEntries.SelectedNode.Tag;
 
-                if (MessageBox.Show("Are you sure you want to delete " + entry.Name + "?", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("确认要删除 " + entry.Name + "吗?", "你确定吗？", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     if (_textAdapter.DeleteEntry(entry))
                     {
@@ -427,7 +427,7 @@ namespace Kuriimu
         private void tsbPreviewSave_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
-            sfd.Title = "Save Preview as PNG...";
+            sfd.Title = "将预览另存为PNG...";
             sfd.InitialDirectory = Settings.Default.LastDirectory;
             sfd.FileName = "preview.png";
             sfd.Filter = "Portable Network Graphics (*.png)|*.png";
@@ -489,7 +489,7 @@ namespace Kuriimu
             DialogResult dr = DialogResult.No;
 
             if (_fileOpen && _hasChanges)
-                dr = MessageBox.Show("You have unsaved changes in " + FileName() + ". Save changes before opening another file?", "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                dr = MessageBox.Show(" " + FileName() + ". 中有尚未保存的更改。是否在打开另一个文件之前保存更改？", "更改尚未保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
             switch (dr)
             {
@@ -559,7 +559,7 @@ namespace Kuriimu
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.ToString(), tempAdapter != null ? $"{tempAdapter.Name} - {tempAdapter.Description} Manager" : "Supported Format Load Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.ToString(), tempAdapter != null ? $"{tempAdapter.Name} - {tempAdapter.Description} Manager" : "支持的格式载入错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -568,7 +568,7 @@ namespace Kuriimu
             var sfd = new SaveFileDialog();
             var dr = DialogResult.OK;
 
-            sfd.Title = $"Save as {_textAdapter.Description}";
+            sfd.Title = $"另存为 {_textAdapter.Description}";
             sfd.FileName = _textAdapter.FileInfo.Name;
             sfd.Filter = _textAdapter.Description + " (" + _textAdapter.Extension + ")|" + _textAdapter.Extension;
 
@@ -597,7 +597,7 @@ namespace Kuriimu
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.ToString(), _textAdapter != null ? $"{_textAdapter.Name} - {_textAdapter.Description} Adapter" : "Supported Format Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.ToString(), _textAdapter != null ? $"{_textAdapter.Name} - {_textAdapter.Description} Adapter" : "支持的格式保存错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return dr;
@@ -617,7 +617,7 @@ namespace Kuriimu
                 result = textAdapters.Except(matchingAdapters).FirstOrDefault(adapter => adapter.Identify(filename));
 
             if (result == null && !batchMode)
-                MessageBox.Show("None of the installed plugins are able to open the file.", "Unsupported Format", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("所有已安装的插件都无法打开该文件.", "不支持的格式", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             return result;
         }
@@ -834,10 +834,10 @@ namespace Kuriimu
                 var tsiLabel = new ToolStripMenuItem(label.Name, GenerateColorSquare(ColorTranslator.FromHtml(label.Color)));
                 tsbManageLabels.DropDownItems.Add(tsiLabel);
 
-                var tsiLabelEdit = new ToolStripMenuItem("Edit " + label.Name, Resources.menu_edit, tsiEditLabel_Click) { Tag = label };
+                var tsiLabelEdit = new ToolStripMenuItem("编辑 " + label.Name, Resources.menu_edit, tsiEditLabel_Click) { Tag = label };
                 tsiLabel.DropDownItems.Add(tsiLabelEdit);
 
-                var tsiLabelDelete = new ToolStripMenuItem("Delete " + label.Name, Resources.menu_delete, tsiDeleteLabel_Click) { Tag = label };
+                var tsiLabelDelete = new ToolStripMenuItem("删除 " + label.Name, Resources.menu_delete, tsiDeleteLabel_Click) { Tag = label };
                 tsiLabel.DropDownItems.Add(tsiLabelDelete);
 
                 // Set
@@ -928,7 +928,7 @@ namespace Kuriimu
             if (_settings == null) return;
             var label = (Kontract.Label)((ToolStripItem)sender).Tag;
 
-            if (MessageBox.Show($"Are you sure you want to delete the {label.Name} label?", "Confirm Label Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
+            if (MessageBox.Show($"是否确认要删除 {label.Name} 标签？", "确认标签删除", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
 
             foreach (var entry in _entries)
             {
@@ -1097,7 +1097,7 @@ namespace Kuriimu
                 // Preview
                 tsbPreviewEnabled.Enabled = _gameHandler?.HandlerCanGeneratePreviews ?? false;
                 tsbPreviewEnabled.Image = Settings.Default.PreviewEnabled ? Resources.menu_preview_visible : Resources.menu_preview_invisible;
-                tsbPreviewEnabled.Text = Settings.Default.PreviewEnabled ? "Disable Preview" : "Enable Preview";
+                tsbPreviewEnabled.Text = Settings.Default.PreviewEnabled ? "关闭预览" : "启用预览";
                 tsbPreviewSave.Enabled = Settings.Default.PreviewEnabled && _gameHandler.HandlerCanGeneratePreviews && _gameHandlerPages != null && _gameHandlerPages.Count > 0;
                 tsbPreviewCopy.Enabled = tsbPreviewSave.Enabled;
 
@@ -1115,9 +1115,9 @@ namespace Kuriimu
                 {
                     txtEdit.Enabled = entry.HasText;
                     if (!entry.HasText && entry.IsSubEntry)
-                        txtEdit.Text = "This entry has no text.";
+                        txtEdit.Text = "此条目没有文本。";
                     else if (!entry.HasText && !entry.IsSubEntry)
-                        txtEdit.Text = "Select a child item to edit the text.";
+                        txtEdit.Text = "选择子项以编辑文本。";
                     txtOriginal.Enabled = entry.HasText && txtOriginal.Text.Trim().Length > 0;
                 }
                 else
@@ -1168,13 +1168,13 @@ namespace Kuriimu
         private void tsbBatchExportKUP_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "Select the source directory containing text files...";
+            fbd.Description = "选择包含文本文件的源目录...";
             fbd.SelectedPath = Settings.Default.LastBatchDirectory == string.Empty ? Settings.Default.LastDirectory : Settings.Default.LastBatchDirectory;
             fbd.ShowNewFolderButton = false;
 
             if (fbd.ShowDialog() == DialogResult.OK)
             {
-                var dr = MessageBox.Show("Search subdirectories?", "", MessageBoxButtons.YesNoCancel);
+                var dr = MessageBox.Show("是否搜索子文件夹?", "", MessageBoxButtons.YesNoCancel);
                 if (dr == DialogResult.Cancel) return;
                 var browseSubdirectories = dr == DialogResult.Yes;
 
@@ -1238,7 +1238,7 @@ namespace Kuriimu
                         }
                     }
 
-                    MessageBox.Show("Batch export completed successfully. " + fileCount + " file(s) succesfully exported.", "Batch Export", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("批量导出成功完成。 " + fileCount + " 个文件成功导出.", "批量导出", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 
@@ -1249,13 +1249,13 @@ namespace Kuriimu
         private void tsbBatchImportKUP_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "Select the source directory containing text and kup file pairs...";
+            fbd.Description = "选择包含文本和kup文件对的源文件夹...";
             fbd.SelectedPath = Settings.Default.LastBatchDirectory == string.Empty ? Settings.Default.LastDirectory : Settings.Default.LastBatchDirectory;
             fbd.ShowNewFolderButton = false;
 
             if (fbd.ShowDialog() == DialogResult.OK)
             {
-                var dr = MessageBox.Show("Search subdirectories?", "", MessageBoxButtons.YesNoCancel);
+                var dr = MessageBox.Show("是否搜索子文件夹？", "", MessageBoxButtons.YesNoCancel);
                 if (dr == DialogResult.Cancel) return;
                 var browseSubdirectories = dr == DialogResult.Yes;
 
@@ -1314,7 +1314,7 @@ namespace Kuriimu
                         }
                     }
 
-                    MessageBox.Show("Batch import completed successfully. " + importCount + " of " + fileCount + " files succesfully imported.", "Batch Import", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("批量导入成功完成。" + fileCount + " 个文件中的 " + importCount + " 个文件成功导入.", "批量导入", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 
@@ -1408,7 +1408,7 @@ namespace Kuriimu
 
         private void tsbLotDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show($"Are you sure you want to delete the lot for {_textAdapter.FileInfo.Name}?\r\nAll labels, notes, and screenshots will be deleted.", "Confirm Lot Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
+            if (MessageBox.Show($"是否确实要删除所有的 {_textAdapter.FileInfo.Name}？\r\n所有标签, 注释和屏幕截图都将被删除。", "确认大量删除", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
             _lot = null;
             File.Delete(_textAdapter.FileInfo.FullName + ".lot");
             UpdateForm();

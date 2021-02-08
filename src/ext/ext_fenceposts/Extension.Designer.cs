@@ -99,41 +99,41 @@
             // 
             // prgBottom
             // 
-            this.prgBottom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.prgBottom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.prgBottom.Location = new System.Drawing.Point(0, 35);
+            this.prgBottom.Location = new System.Drawing.Point(0, 32);
             this.prgBottom.Margin = new System.Windows.Forms.Padding(0);
             this.prgBottom.Maximum = 1000;
             this.prgBottom.Name = "prgBottom";
-            this.prgBottom.Size = new System.Drawing.Size(862, 23);
+            this.prgBottom.Size = new System.Drawing.Size(862, 21);
             this.prgBottom.Step = 1;
             this.prgBottom.TabIndex = 0;
             // 
             // prgTop
             // 
-            this.prgTop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.prgTop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.prgTop.Location = new System.Drawing.Point(0, 6);
             this.prgTop.Margin = new System.Windows.Forms.Padding(0);
             this.prgTop.Maximum = 1000;
             this.prgTop.Name = "prgTop";
-            this.prgTop.Size = new System.Drawing.Size(862, 23);
+            this.prgTop.Size = new System.Drawing.Size(862, 21);
             this.prgTop.Step = 1;
             this.prgTop.TabIndex = 1;
             // 
             // txtFilename
             // 
-            this.txtFilename.Location = new System.Drawing.Point(93, 18);
+            this.txtFilename.Location = new System.Drawing.Point(93, 17);
             this.txtFilename.Name = "txtFilename";
-            this.txtFilename.Size = new System.Drawing.Size(483, 20);
+            this.txtFilename.Size = new System.Drawing.Size(483, 21);
             this.txtFilename.TabIndex = 3;
             this.txtFilename.TextChanged += new System.EventHandler(this.txtFilename_TextChanged);
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(582, 16);
+            this.btnBrowse.Location = new System.Drawing.Point(582, 15);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowse.Size = new System.Drawing.Size(75, 21);
             this.btnBrowse.TabIndex = 4;
             this.btnBrowse.Text = "...";
             this.btnBrowse.UseVisualStyleBackColor = true;
@@ -141,9 +141,9 @@
             // 
             // btnDump
             // 
-            this.btnDump.Location = new System.Drawing.Point(337, 44);
+            this.btnDump.Location = new System.Drawing.Point(337, 41);
             this.btnDump.Name = "btnDump";
-            this.btnDump.Size = new System.Drawing.Size(157, 23);
+            this.btnDump.Size = new System.Drawing.Size(157, 21);
             this.btnDump.TabIndex = 5;
             this.btnDump.Text = "Dump!";
             this.btnDump.UseVisualStyleBackColor = true;
@@ -156,9 +156,10 @@
             this.lstStatus.Enabled = false;
             this.lstStatus.FormattingEnabled = true;
             this.lstStatus.IntegralHeight = false;
-            this.lstStatus.Location = new System.Drawing.Point(0, 81);
+            this.lstStatus.ItemHeight = 12;
+            this.lstStatus.Location = new System.Drawing.Point(0, 75);
             this.lstStatus.Name = "lstStatus";
-            this.lstStatus.Size = new System.Drawing.Size(666, 371);
+            this.lstStatus.Size = new System.Drawing.Size(666, 338);
             this.lstStatus.TabIndex = 6;
             this.lstStatus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lstStatus_KeyDown);
             this.lstStatus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lstStatus_MouseDown);
@@ -168,14 +169,14 @@
             this.cmsStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.copyOffsetToolStripMenuItem});
             this.cmsStatus.Name = "cmsStatus";
-            this.cmsStatus.Size = new System.Drawing.Size(138, 26);
+            this.cmsStatus.Size = new System.Drawing.Size(146, 26);
             this.cmsStatus.Opening += new System.ComponentModel.CancelEventHandler(this.cmsStatus_Opening);
             // 
             // copyOffsetToolStripMenuItem
             // 
             this.copyOffsetToolStripMenuItem.Image = global::ext_fenceposts.Properties.Resources.menu_copy;
             this.copyOffsetToolStripMenuItem.Name = "copyOffsetToolStripMenuItem";
-            this.copyOffsetToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.copyOffsetToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.copyOffsetToolStripMenuItem.Text = "&Copy Offset";
             this.copyOffsetToolStripMenuItem.Click += new System.EventHandler(this.copyOffsetToolStripMenuItem_Click);
             // 
@@ -185,9 +186,10 @@
             this.lstStringBounds.Enabled = false;
             this.lstStringBounds.FormattingEnabled = true;
             this.lstStringBounds.IntegralHeight = false;
-            this.lstStringBounds.Location = new System.Drawing.Point(0, 27);
+            this.lstStringBounds.ItemHeight = 12;
+            this.lstStringBounds.Location = new System.Drawing.Point(0, 25);
             this.lstStringBounds.Name = "lstStringBounds";
-            this.lstStringBounds.Size = new System.Drawing.Size(192, 218);
+            this.lstStringBounds.Size = new System.Drawing.Size(192, 199);
             this.lstStringBounds.TabIndex = 9;
             this.lstStringBounds.SelectedIndexChanged += new System.EventHandler(this.lstStringBounds_SelectedIndexChanged);
             this.lstStringBounds.DoubleClick += new System.EventHandler(this.lstStringBounds_DoubleClick);
@@ -198,9 +200,10 @@
             this.lstPointerTables.Enabled = false;
             this.lstPointerTables.FormattingEnabled = true;
             this.lstPointerTables.IntegralHeight = false;
-            this.lstPointerTables.Location = new System.Drawing.Point(0, 27);
+            this.lstPointerTables.ItemHeight = 12;
+            this.lstPointerTables.Location = new System.Drawing.Point(0, 25);
             this.lstPointerTables.Name = "lstPointerTables";
-            this.lstPointerTables.Size = new System.Drawing.Size(192, 176);
+            this.lstPointerTables.Size = new System.Drawing.Size(192, 160);
             this.lstPointerTables.TabIndex = 10;
             this.lstPointerTables.SelectedIndexChanged += new System.EventHandler(this.lstPointerTables_SelectedIndexChanged);
             this.lstPointerTables.DoubleClick += new System.EventHandler(this.lstPointerTables_DoubleClick);
@@ -210,10 +213,10 @@
             this.pnlMain.Controls.Add(this.splConfigure);
             this.pnlMain.Controls.Add(this.pnlProgress);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(0, 51);
+            this.pnlMain.Location = new System.Drawing.Point(0, 50);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Padding = new System.Windows.Forms.Padding(6);
-            this.pnlMain.Size = new System.Drawing.Size(874, 522);
+            this.pnlMain.Size = new System.Drawing.Size(874, 479);
             this.pnlMain.TabIndex = 14;
             // 
             // splConfigure
@@ -231,7 +234,7 @@
             // splConfigure.Panel2
             // 
             this.splConfigure.Panel2.Controls.Add(this.splStatus);
-            this.splConfigure.Size = new System.Drawing.Size(862, 452);
+            this.splConfigure.Size = new System.Drawing.Size(862, 413);
             this.splConfigure.SplitterDistance = 192;
             this.splConfigure.TabIndex = 0;
             // 
@@ -252,8 +255,8 @@
             // 
             this.splBounds.Panel2.Controls.Add(this.lstStringBounds);
             this.splBounds.Panel2.Controls.Add(this.tlsStringBounds);
-            this.splBounds.Size = new System.Drawing.Size(192, 452);
-            this.splBounds.SplitterDistance = 203;
+            this.splBounds.Size = new System.Drawing.Size(192, 413);
+            this.splBounds.SplitterDistance = 185;
             this.splBounds.TabIndex = 0;
             // 
             // tlsPointerTables
@@ -269,15 +272,15 @@
             this.tlsPointerTables.Location = new System.Drawing.Point(0, 0);
             this.tlsPointerTables.Name = "tlsPointerTables";
             this.tlsPointerTables.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsPointerTables.Size = new System.Drawing.Size(192, 27);
+            this.tlsPointerTables.Size = new System.Drawing.Size(192, 25);
             this.tlsPointerTables.TabIndex = 1;
             // 
             // tslEntries
             // 
             this.tslEntries.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.tslEntries.Name = "tslEntries";
-            this.tslEntries.Size = new System.Drawing.Size(82, 22);
-            this.tslEntries.Text = "Pointer Tables";
+            this.tslEntries.Size = new System.Drawing.Size(44, 20);
+            this.tslEntries.Text = "指针表";
             // 
             // tsbPointerTableAdd
             // 
@@ -286,8 +289,8 @@
             this.tsbPointerTableAdd.Image = global::ext_fenceposts.Properties.Resources.menu_add;
             this.tsbPointerTableAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbPointerTableAdd.Name = "tsbPointerTableAdd";
-            this.tsbPointerTableAdd.Size = new System.Drawing.Size(23, 22);
-            this.tsbPointerTableAdd.Text = "Add Pointer Table";
+            this.tsbPointerTableAdd.Size = new System.Drawing.Size(23, 20);
+            this.tsbPointerTableAdd.Text = "添加指针表";
             this.tsbPointerTableAdd.Click += new System.EventHandler(this.tsbPointerTableAdd_Click);
             // 
             // tsbPointerTableProperties
@@ -297,8 +300,8 @@
             this.tsbPointerTableProperties.Image = global::ext_fenceposts.Properties.Resources.menu_properties;
             this.tsbPointerTableProperties.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbPointerTableProperties.Name = "tsbPointerTableProperties";
-            this.tsbPointerTableProperties.Size = new System.Drawing.Size(23, 22);
-            this.tsbPointerTableProperties.Text = "Pointer Table Properties";
+            this.tsbPointerTableProperties.Size = new System.Drawing.Size(23, 20);
+            this.tsbPointerTableProperties.Text = "指针表属性";
             this.tsbPointerTableProperties.Click += new System.EventHandler(this.tsbPointerTableProperties_Click);
             // 
             // tsbPointerTableDelete
@@ -308,8 +311,8 @@
             this.tsbPointerTableDelete.Image = global::ext_fenceposts.Properties.Resources.menu_delete;
             this.tsbPointerTableDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbPointerTableDelete.Name = "tsbPointerTableDelete";
-            this.tsbPointerTableDelete.Size = new System.Drawing.Size(23, 22);
-            this.tsbPointerTableDelete.Text = "Delete Pointer Table";
+            this.tsbPointerTableDelete.Size = new System.Drawing.Size(23, 20);
+            this.tsbPointerTableDelete.Text = "删除指针表";
             this.tsbPointerTableDelete.Click += new System.EventHandler(this.tsbPointerTableDelete_Click);
             // 
             // tlsStringBounds
@@ -325,15 +328,15 @@
             this.tlsStringBounds.Location = new System.Drawing.Point(0, 0);
             this.tlsStringBounds.Name = "tlsStringBounds";
             this.tlsStringBounds.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsStringBounds.Size = new System.Drawing.Size(192, 27);
+            this.tlsStringBounds.Size = new System.Drawing.Size(192, 25);
             this.tlsStringBounds.TabIndex = 2;
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(81, 22);
-            this.toolStripLabel1.Text = "String Bounds";
+            this.toolStripLabel1.Size = new System.Drawing.Size(68, 20);
+            this.toolStripLabel1.Text = "字符串边界";
             // 
             // tsbStringBoundAdd
             // 
@@ -342,8 +345,8 @@
             this.tsbStringBoundAdd.Image = global::ext_fenceposts.Properties.Resources.menu_add;
             this.tsbStringBoundAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbStringBoundAdd.Name = "tsbStringBoundAdd";
-            this.tsbStringBoundAdd.Size = new System.Drawing.Size(23, 22);
-            this.tsbStringBoundAdd.Text = "Add Dumping Bound";
+            this.tsbStringBoundAdd.Size = new System.Drawing.Size(23, 20);
+            this.tsbStringBoundAdd.Text = "添加转储边界";
             this.tsbStringBoundAdd.Click += new System.EventHandler(this.tsbStringBoundAdd_Click);
             // 
             // tsbStringBoundProperties
@@ -353,8 +356,8 @@
             this.tsbStringBoundProperties.Image = global::ext_fenceposts.Properties.Resources.menu_properties;
             this.tsbStringBoundProperties.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbStringBoundProperties.Name = "tsbStringBoundProperties";
-            this.tsbStringBoundProperties.Size = new System.Drawing.Size(23, 22);
-            this.tsbStringBoundProperties.Text = "Dumping Bound Properties";
+            this.tsbStringBoundProperties.Size = new System.Drawing.Size(23, 20);
+            this.tsbStringBoundProperties.Text = "转储绑定属性";
             this.tsbStringBoundProperties.Click += new System.EventHandler(this.tsbStringBoundProperties_Click);
             // 
             // tsbStringBoundDelete
@@ -364,8 +367,8 @@
             this.tsbStringBoundDelete.Image = global::ext_fenceposts.Properties.Resources.menu_delete;
             this.tsbStringBoundDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbStringBoundDelete.Name = "tsbStringBoundDelete";
-            this.tsbStringBoundDelete.Size = new System.Drawing.Size(23, 22);
-            this.tsbStringBoundDelete.Text = "Delete Dumping Bound";
+            this.tsbStringBoundDelete.Size = new System.Drawing.Size(23, 20);
+            this.tsbStringBoundDelete.Text = "删除转储边界";
             this.tsbStringBoundDelete.Click += new System.EventHandler(this.tsbStringBoundDelete_Click);
             // 
             // splStatus
@@ -380,7 +383,7 @@
             this.splStatus.Panel1.Controls.Add(this.lstStatus);
             this.splStatus.Panel1.Controls.Add(this.pnlCommands);
             this.splStatus.Panel2Collapsed = true;
-            this.splStatus.Size = new System.Drawing.Size(666, 452);
+            this.splStatus.Size = new System.Drawing.Size(666, 413);
             this.splStatus.SplitterDistance = 327;
             this.splStatus.TabIndex = 0;
             // 
@@ -391,7 +394,7 @@
             this.pnlCommands.Location = new System.Drawing.Point(0, 0);
             this.pnlCommands.Name = "pnlCommands";
             this.pnlCommands.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.pnlCommands.Size = new System.Drawing.Size(666, 81);
+            this.pnlCommands.Size = new System.Drawing.Size(666, 75);
             this.pnlCommands.TabIndex = 0;
             // 
             // groupBox1
@@ -406,47 +409,47 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(666, 77);
+            this.groupBox1.Size = new System.Drawing.Size(666, 71);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Control Panel";
+            this.groupBox1.Text = "控制面板";
             // 
             // btnOptions
             // 
-            this.btnOptions.Location = new System.Drawing.Point(9, 44);
+            this.btnOptions.Location = new System.Drawing.Point(9, 41);
             this.btnOptions.Name = "btnOptions";
-            this.btnOptions.Size = new System.Drawing.Size(157, 23);
+            this.btnOptions.Size = new System.Drawing.Size(157, 21);
             this.btnOptions.TabIndex = 11;
-            this.btnOptions.Text = "Options";
+            this.btnOptions.Text = "选项";
             this.btnOptions.UseVisualStyleBackColor = true;
             this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
             // chkCleanDump
             // 
-            this.chkCleanDump.Location = new System.Drawing.Point(172, 47);
+            this.chkCleanDump.Location = new System.Drawing.Point(172, 43);
             this.chkCleanDump.Name = "chkCleanDump";
-            this.chkCleanDump.Size = new System.Drawing.Size(157, 19);
+            this.chkCleanDump.Size = new System.Drawing.Size(157, 18);
             this.chkCleanDump.TabIndex = 10;
-            this.chkCleanDump.Text = "Clean Dump";
+            this.chkCleanDump.Text = "清除Dump";
             this.chkCleanDump.UseVisualStyleBackColor = true;
             this.chkCleanDump.CheckedChanged += new System.EventHandler(this.chkCleanDump_CheckedChanged);
             // 
             // lblFile
             // 
             this.lblFile.AutoSize = true;
-            this.lblFile.Location = new System.Drawing.Point(61, 21);
+            this.lblFile.Location = new System.Drawing.Point(46, 20);
             this.lblFile.Name = "lblFile";
-            this.lblFile.Size = new System.Drawing.Size(26, 13);
+            this.lblFile.Size = new System.Drawing.Size(41, 12);
             this.lblFile.TabIndex = 9;
-            this.lblFile.Text = "File:";
+            this.lblFile.Text = "文件：";
             // 
             // btnInject
             // 
-            this.btnInject.Location = new System.Drawing.Point(500, 44);
+            this.btnInject.Location = new System.Drawing.Point(500, 41);
             this.btnInject.Name = "btnInject";
-            this.btnInject.Size = new System.Drawing.Size(157, 23);
+            this.btnInject.Size = new System.Drawing.Size(157, 21);
             this.btnInject.TabIndex = 8;
-            this.btnInject.Text = "Inject!";
+            this.btnInject.Text = "注入！";
             this.btnInject.UseVisualStyleBackColor = true;
             this.btnInject.Click += new System.EventHandler(this.btnInject_Click);
             // 
@@ -455,10 +458,10 @@
             this.pnlProgress.Controls.Add(this.prgTop);
             this.pnlProgress.Controls.Add(this.prgBottom);
             this.pnlProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlProgress.Location = new System.Drawing.Point(6, 458);
+            this.pnlProgress.Location = new System.Drawing.Point(6, 419);
             this.pnlProgress.Name = "pnlProgress";
             this.pnlProgress.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.pnlProgress.Size = new System.Drawing.Size(862, 58);
+            this.pnlProgress.Size = new System.Drawing.Size(862, 54);
             this.pnlProgress.TabIndex = 1;
             // 
             // mnuMain
@@ -468,7 +471,7 @@
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.mnuMain.Size = new System.Drawing.Size(874, 24);
+            this.mnuMain.Size = new System.Drawing.Size(874, 25);
             this.mnuMain.TabIndex = 16;
             // 
             // fileToolStripMenuItem
@@ -481,16 +484,16 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.fileToolStripMenuItem.Text = "&文件";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Image = global::ext_fenceposts.Properties.Resources.menu_new;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.newToolStripMenuItem.Text = "&New";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Text = "&新建";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
@@ -498,8 +501,8 @@
             this.openToolStripMenuItem.Image = global::ext_fenceposts.Properties.Resources.menu_open;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Text = "&打开";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
@@ -508,8 +511,8 @@
             this.saveToolStripMenuItem.Image = global::ext_fenceposts.Properties.Resources.menu_save;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Text = "&保存";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
@@ -518,22 +521,22 @@
             this.saveAsToolStripMenuItem.Image = global::ext_fenceposts.Properties.Resources.menu_save_as;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.saveAsToolStripMenuItem.Text = "S&ave As...";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Text = "&另存为...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::ext_fenceposts.Properties.Resources.menu_exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "&退出";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // tsbNew
@@ -542,8 +545,8 @@
             this.tsbNew.Image = global::ext_fenceposts.Properties.Resources.menu_new;
             this.tsbNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNew.Name = "tsbNew";
-            this.tsbNew.Size = new System.Drawing.Size(23, 22);
-            this.tsbNew.Text = "New KUP File";
+            this.tsbNew.Size = new System.Drawing.Size(23, 20);
+            this.tsbNew.Text = "新建KUP文件";
             this.tsbNew.Click += new System.EventHandler(this.tsbNew_Click);
             // 
             // tsbOpen
@@ -552,8 +555,8 @@
             this.tsbOpen.Image = global::ext_fenceposts.Properties.Resources.menu_open;
             this.tsbOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOpen.Name = "tsbOpen";
-            this.tsbOpen.Size = new System.Drawing.Size(23, 22);
-            this.tsbOpen.Text = "Open KUP File";
+            this.tsbOpen.Size = new System.Drawing.Size(23, 20);
+            this.tsbOpen.Text = "打开KUP文件";
             this.tsbOpen.Click += new System.EventHandler(this.tsbOpen_Click);
             // 
             // tsbSave
@@ -563,8 +566,8 @@
             this.tsbSave.Image = global::ext_fenceposts.Properties.Resources.menu_save;
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(23, 22);
-            this.tsbSave.Text = "Save";
+            this.tsbSave.Size = new System.Drawing.Size(23, 20);
+            this.tsbSave.Text = "保存";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
             // tsbSaveAs
@@ -574,8 +577,8 @@
             this.tsbSaveAs.Image = global::ext_fenceposts.Properties.Resources.menu_save_as;
             this.tsbSaveAs.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSaveAs.Name = "tsbSaveAs";
-            this.tsbSaveAs.Size = new System.Drawing.Size(23, 22);
-            this.tsbSaveAs.Text = "Save As...";
+            this.tsbSaveAs.Size = new System.Drawing.Size(23, 20);
+            this.tsbSaveAs.Text = "另存为...";
             this.tsbSaveAs.Click += new System.EventHandler(this.tsbSaveAs_Click);
             // 
             // tlsMain
@@ -590,10 +593,10 @@
             this.tsbSaveAs,
             this.tsbGameSelect,
             this.tslDumpUsing});
-            this.tlsMain.Location = new System.Drawing.Point(0, 24);
+            this.tlsMain.Location = new System.Drawing.Point(0, 25);
             this.tlsMain.Name = "tlsMain";
             this.tlsMain.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsMain.Size = new System.Drawing.Size(874, 27);
+            this.tlsMain.Size = new System.Drawing.Size(874, 25);
             this.tlsMain.TabIndex = 15;
             // 
             // tsbGameSelect
@@ -603,21 +606,21 @@
             this.tsbGameSelect.Image = global::ext_fenceposts.Properties.Resources.game_none;
             this.tsbGameSelect.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbGameSelect.Name = "tsbGameSelect";
-            this.tsbGameSelect.Size = new System.Drawing.Size(86, 22);
+            this.tsbGameSelect.Size = new System.Drawing.Size(93, 20);
             this.tsbGameSelect.Text = "No Game";
             // 
             // tslDumpUsing
             // 
             this.tslDumpUsing.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.tslDumpUsing.Name = "tslDumpUsing";
-            this.tslDumpUsing.Size = new System.Drawing.Size(75, 22);
-            this.tslDumpUsing.Text = "Dump using:";
+            this.tslDumpUsing.Size = new System.Drawing.Size(68, 20);
+            this.tslDumpUsing.Text = "转储使用：";
             // 
             // frmExtension
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 573);
+            this.ClientSize = new System.Drawing.Size(874, 529);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.tlsMain);
             this.Controls.Add(this.mnuMain);

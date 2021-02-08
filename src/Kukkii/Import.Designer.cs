@@ -35,14 +35,14 @@
             // 
             // btnImport
             // 
-            this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnImport.Image = global::Kukkii.Properties.Resources.import_import;
             this.btnImport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnImport.Location = new System.Drawing.Point(12, 299);
+            this.btnImport.Location = new System.Drawing.Point(12, 276);
             this.btnImport.Name = "btnImport";
             this.btnImport.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnImport.Size = new System.Drawing.Size(317, 58);
+            this.btnImport.Size = new System.Drawing.Size(317, 54);
             this.btnImport.TabIndex = 0;
             this.btnImport.Text = "Import the dropped image";
             this.btnImport.UseVisualStyleBackColor = true;
@@ -50,14 +50,14 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.btnOpen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOpen.Image = global::Kukkii.Properties.Resources.import_open;
             this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOpen.Location = new System.Drawing.Point(12, 363);
+            this.btnOpen.Location = new System.Drawing.Point(12, 335);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnOpen.Size = new System.Drawing.Size(317, 58);
+            this.btnOpen.Size = new System.Drawing.Size(317, 54);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "Open the dropped image";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -65,27 +65,27 @@
             // 
             // imbPreview
             // 
-            this.imbPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.imbPreview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imbPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imbPreview.GridCellSize = 16;
             this.imbPreview.GridColor = System.Drawing.Color.Silver;
-            this.imbPreview.Location = new System.Drawing.Point(12, 12);
+            this.imbPreview.Location = new System.Drawing.Point(12, 11);
             this.imbPreview.Name = "imbPreview";
-            this.imbPreview.Size = new System.Drawing.Size(317, 281);
+            this.imbPreview.Size = new System.Drawing.Size(317, 260);
             this.imbPreview.TabIndex = 7;
             // 
             // Import
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 433);
+            this.ClientSize = new System.Drawing.Size(341, 400);
             this.Controls.Add(this.imbPreview);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnImport);
             this.Name = "Import";
-            this.Text = "Import";
+            this.Text = "导入";
             this.Load += new System.EventHandler(this.Import_Load);
             this.ResumeLayout(false);
 

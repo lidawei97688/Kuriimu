@@ -27,7 +27,7 @@ namespace Kuriimu
             chkSearchSubfolders.Checked = Settings.Default.SequenceSearchSubfolders;
             var sb = new StringBuilder(16);
             Win32.StrFormatByteSize(SearchLimit, sb, 16);
-            lblNote.Text = $"Files over {sb} will not be searched.";
+            lblNote.Text = $"超过 {sb} 的文件将不会被搜索.";
 
             try
             {
@@ -44,7 +44,7 @@ namespace Kuriimu
         {
             var fbd = new FolderBrowserDialog
             {
-                Description = "Select the directory to search through.",
+                Description = "选择要搜索的文件夹",
                 SelectedPath = Settings.Default.SequenceSearchDirectory
             };
 
@@ -87,7 +87,7 @@ namespace Kuriimu
 
             if (lstResults.Items.Count == 0)
             {
-                MessageBox.Show($"Could not find \"{txtSearchText.Text}\".", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"未找到 \"{txtSearchText.Text}\"。", Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

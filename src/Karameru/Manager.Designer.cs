@@ -50,7 +50,9 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gBATempToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gitHubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.upgradeToKuriimu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tlsMain = new System.Windows.Forms.ToolStrip();
             this.tsbNew = new System.Windows.Forms.ToolStripButton();
             this.tsbOpen = new System.Windows.Forms.ToolStripButton();
@@ -104,8 +106,6 @@
             this.tileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imlFiles = new System.Windows.Forms.ImageList(this.components);
             this.imlFilesLarge = new System.Windows.Forms.ImageList(this.components);
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.upgradeToKuriimu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.tlsMain.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -131,7 +131,7 @@
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
             this.mnuMain.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.mnuMain.Size = new System.Drawing.Size(949, 24);
+            this.mnuMain.Size = new System.Drawing.Size(949, 25);
             this.mnuMain.TabIndex = 1;
             // 
             // fileToolStripMenuItem
@@ -145,8 +145,8 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.fileToolStripMenuItem.Text = "&文件";
             // 
             // newToolStripMenuItem
             // 
@@ -154,16 +154,16 @@
             this.newToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_new;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.newToolStripMenuItem.Text = "&New";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Text = "&新建";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_open;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Text = "&打开";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
@@ -172,8 +172,8 @@
             this.saveToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_save;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Text = "&保存";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
@@ -182,8 +182,8 @@
             this.saveAsToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_save_as;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.saveAsToolStripMenuItem.Text = "S&ave As...";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Text = "&另存为...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
@@ -191,22 +191,22 @@
             this.closeToolStripMenuItem.Enabled = false;
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.closeToolStripMenuItem.Text = "&Close";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Text = "&关闭";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "&退出";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
@@ -216,8 +216,8 @@
             this.toolStripMenuItem1,
             this.propertiesToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.editToolStripMenuItem.Text = "&编辑";
             // 
             // findToolStripMenuItem
             // 
@@ -225,14 +225,14 @@
             this.findToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_find;
             this.findToolStripMenuItem.Name = "findToolStripMenuItem";
             this.findToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.findToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.findToolStripMenuItem.Text = "&Find";
+            this.findToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.findToolStripMenuItem.Text = "&查找";
             this.findToolStripMenuItem.Click += new System.EventHandler(this.findToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // propertiesToolStripMenuItem
             // 
@@ -240,8 +240,8 @@
             this.propertiesToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_properties;
             this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
             this.propertiesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F8;
-            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.propertiesToolStripMenuItem.Text = "&Properties";
+            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.propertiesToolStripMenuItem.Text = "&属性";
             this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.propertiesToolStripMenuItem_Click);
             // 
             // tolsToolStripMenuItem
@@ -251,27 +251,27 @@
             this.encryptionToolStripMenuItem,
             this.hashToolStripMenuItem});
             this.tolsToolStripMenuItem.Name = "tolsToolStripMenuItem";
-            this.tolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.tolsToolStripMenuItem.Text = "&Tools";
+            this.tolsToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.tolsToolStripMenuItem.Text = "&工具";
             // 
             // compressionToolStripMenuItem
             // 
             this.compressionToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_compression;
             this.compressionToolStripMenuItem.Name = "compressionToolStripMenuItem";
-            this.compressionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.compressionToolStripMenuItem.Text = "&Compression";
+            this.compressionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.compressionToolStripMenuItem.Text = "&压缩解压";
             // 
             // encryptionToolStripMenuItem
             // 
             this.encryptionToolStripMenuItem.Name = "encryptionToolStripMenuItem";
-            this.encryptionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.encryptionToolStripMenuItem.Text = "&Encryption";
+            this.encryptionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.encryptionToolStripMenuItem.Text = "&加密解密";
             // 
             // hashToolStripMenuItem
             // 
             this.hashToolStripMenuItem.Name = "hashToolStripMenuItem";
-            this.hashToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.hashToolStripMenuItem.Text = "Hash";
+            this.hashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hashToolStripMenuItem.Text = "校验";
             // 
             // aboutToolStripMenuItem
             // 
@@ -281,8 +281,8 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem1});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.aboutToolStripMenuItem.Text = "&Help";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.aboutToolStripMenuItem.Text = "&帮助";
             // 
             // gBATempToolStripMenuItem
             // 
@@ -300,14 +300,26 @@
             this.gitHubToolStripMenuItem.Text = "GitHub";
             this.gitHubToolStripMenuItem.Click += new System.EventHandler(this.gitHubToolStripMenuItem_Click);
             // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Image = global::Karameru.Properties.Resources.menu_about;
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
             this.aboutToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem1.Text = "&About";
+            this.aboutToolStripMenuItem1.Text = "&关于";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
+            // 
+            // upgradeToKuriimu2ToolStripMenuItem
+            // 
+            this.upgradeToKuriimu2ToolStripMenuItem.Name = "upgradeToKuriimu2ToolStripMenuItem";
+            this.upgradeToKuriimu2ToolStripMenuItem.Size = new System.Drawing.Size(107, 21);
+            this.upgradeToKuriimu2ToolStripMenuItem.Text = "升级至Kuriimu2";
+            this.upgradeToKuriimu2ToolStripMenuItem.Click += new System.EventHandler(this.upgradeToKuriimu2ToolStripMenuItem_Click);
             // 
             // tlsMain
             // 
@@ -328,10 +340,10 @@
             this.toolStripSeparator4,
             this.tsbBatchExtract,
             this.tsbBatchArchive});
-            this.tlsMain.Location = new System.Drawing.Point(0, 24);
+            this.tlsMain.Location = new System.Drawing.Point(0, 25);
             this.tlsMain.Name = "tlsMain";
             this.tlsMain.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsMain.Size = new System.Drawing.Size(949, 27);
+            this.tlsMain.Size = new System.Drawing.Size(949, 25);
             this.tlsMain.TabIndex = 3;
             // 
             // tsbNew
@@ -341,8 +353,8 @@
             this.tsbNew.Image = global::Karameru.Properties.Resources.menu_new;
             this.tsbNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbNew.Name = "tsbNew";
-            this.tsbNew.Size = new System.Drawing.Size(23, 22);
-            this.tsbNew.Text = "New";
+            this.tsbNew.Size = new System.Drawing.Size(23, 20);
+            this.tsbNew.Text = "新建";
             // 
             // tsbOpen
             // 
@@ -350,8 +362,8 @@
             this.tsbOpen.Image = global::Karameru.Properties.Resources.menu_open;
             this.tsbOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOpen.Name = "tsbOpen";
-            this.tsbOpen.Size = new System.Drawing.Size(23, 22);
-            this.tsbOpen.Text = "Open";
+            this.tsbOpen.Size = new System.Drawing.Size(23, 20);
+            this.tsbOpen.Text = "打开";
             this.tsbOpen.Click += new System.EventHandler(this.tsbOpen_Click);
             // 
             // tsbSave
@@ -361,8 +373,8 @@
             this.tsbSave.Image = global::Karameru.Properties.Resources.menu_save;
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(23, 22);
-            this.tsbSave.Text = "Save";
+            this.tsbSave.Size = new System.Drawing.Size(23, 20);
+            this.tsbSave.Text = "保存";
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
             // tsbSaveAs
@@ -372,14 +384,14 @@
             this.tsbSaveAs.Image = global::Karameru.Properties.Resources.menu_save_as;
             this.tsbSaveAs.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSaveAs.Name = "tsbSaveAs";
-            this.tsbSaveAs.Size = new System.Drawing.Size(23, 22);
-            this.tsbSaveAs.Text = "Save As...";
+            this.tsbSaveAs.Size = new System.Drawing.Size(23, 20);
+            this.tsbSaveAs.Text = "另存为...";
             this.tsbSaveAs.Click += new System.EventHandler(this.tsbSaveAs_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
             // 
             // tsbFind
             // 
@@ -388,14 +400,14 @@
             this.tsbFind.Image = global::Karameru.Properties.Resources.menu_find;
             this.tsbFind.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFind.Name = "tsbFind";
-            this.tsbFind.Size = new System.Drawing.Size(23, 22);
-            this.tsbFind.Text = "Find";
+            this.tsbFind.Size = new System.Drawing.Size(23, 20);
+            this.tsbFind.Text = "查找";
             this.tsbFind.Click += new System.EventHandler(this.tsbFind_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
             // 
             // tsbKukkii
             // 
@@ -403,7 +415,7 @@
             this.tsbKukkii.Image = global::Karameru.Properties.Resources.kukkii;
             this.tsbKukkii.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbKukkii.Name = "tsbKukkii";
-            this.tsbKukkii.Size = new System.Drawing.Size(59, 22);
+            this.tsbKukkii.Size = new System.Drawing.Size(63, 20);
             this.tsbKukkii.Text = "Kukkii";
             this.tsbKukkii.Click += new System.EventHandler(this.tsbKukkii_Click);
             // 
@@ -414,8 +426,8 @@
             this.tsbProperties.Image = global::Karameru.Properties.Resources.menu_properties;
             this.tsbProperties.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbProperties.Name = "tsbProperties";
-            this.tsbProperties.Size = new System.Drawing.Size(23, 22);
-            this.tsbProperties.Text = "Properties";
+            this.tsbProperties.Size = new System.Drawing.Size(23, 20);
+            this.tsbProperties.Text = "属性";
             this.tsbProperties.Click += new System.EventHandler(this.tsbProperties_Click);
             // 
             // tsbKuriimu
@@ -424,14 +436,14 @@
             this.tsbKuriimu.Image = global::Karameru.Properties.Resources.kuriimu;
             this.tsbKuriimu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbKuriimu.Name = "tsbKuriimu";
-            this.tsbKuriimu.Size = new System.Drawing.Size(69, 22);
+            this.tsbKuriimu.Size = new System.Drawing.Size(72, 20);
             this.tsbKuriimu.Text = "Kuriimu";
             this.tsbKuriimu.Click += new System.EventHandler(this.tsbKuriimu_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
             // 
             // tsbBatchExtract
             // 
@@ -439,8 +451,8 @@
             this.tsbBatchExtract.Image = global::Karameru.Properties.Resources.menu_batch_extract;
             this.tsbBatchExtract.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBatchExtract.Name = "tsbBatchExtract";
-            this.tsbBatchExtract.Size = new System.Drawing.Size(23, 22);
-            this.tsbBatchExtract.Text = "Batch Extract";
+            this.tsbBatchExtract.Size = new System.Drawing.Size(23, 20);
+            this.tsbBatchExtract.Text = "批量提取";
             this.tsbBatchExtract.Click += new System.EventHandler(this.tsbBatchExtract_Click);
             // 
             // tsbBatchArchive
@@ -449,18 +461,18 @@
             this.tsbBatchArchive.Image = global::Karameru.Properties.Resources.menu_batch_archive;
             this.tsbBatchArchive.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBatchArchive.Name = "tsbBatchArchive";
-            this.tsbBatchArchive.Size = new System.Drawing.Size(23, 22);
-            this.tsbBatchArchive.Text = "Batch Archive";
+            this.tsbBatchArchive.Size = new System.Drawing.Size(23, 20);
+            this.tsbBatchArchive.Text = "批量存档";
             this.tsbBatchArchive.Click += new System.EventHandler(this.tsbBatchArchive_Click);
             // 
             // pnlMain
             // 
             this.pnlMain.Controls.Add(this.splMain);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(0, 51);
+            this.pnlMain.Location = new System.Drawing.Point(0, 50);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Padding = new System.Windows.Forms.Padding(6);
-            this.pnlMain.Size = new System.Drawing.Size(949, 576);
+            this.pnlMain.Size = new System.Drawing.Size(949, 529);
             this.pnlMain.TabIndex = 4;
             // 
             // splMain
@@ -481,7 +493,7 @@
             this.splMain.Panel2.Controls.Add(this.lstFiles);
             this.splMain.Panel2.Controls.Add(this.tlsFileDetails);
             this.splMain.Panel2.Controls.Add(this.tlsPreview);
-            this.splMain.Size = new System.Drawing.Size(937, 564);
+            this.splMain.Size = new System.Drawing.Size(937, 517);
             this.splMain.SplitterDistance = 320;
             this.splMain.SplitterWidth = 6;
             this.splMain.TabIndex = 1;
@@ -495,10 +507,10 @@
             this.treDirectories.HideSelection = false;
             this.treDirectories.HotTracking = true;
             this.treDirectories.ItemHeight = 21;
-            this.treDirectories.Location = new System.Drawing.Point(0, 27);
+            this.treDirectories.Location = new System.Drawing.Point(0, 25);
             this.treDirectories.Name = "treDirectories";
             this.treDirectories.ShowLines = false;
-            this.treDirectories.Size = new System.Drawing.Size(320, 537);
+            this.treDirectories.Size = new System.Drawing.Size(320, 492);
             this.treDirectories.TabIndex = 4;
             this.treDirectories.AfterCollapse += new System.Windows.Forms.TreeViewEventHandler(this.treDirectories_AfterCollapse);
             this.treDirectories.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.treDirectories_AfterExpand);
@@ -514,14 +526,14 @@
             this.addToolStripMenuItem,
             this.deleteDirectoryToolStripMenuItem});
             this.mnuDirectories.Name = "mnuEntries";
-            this.mnuDirectories.Size = new System.Drawing.Size(125, 92);
+            this.mnuDirectories.Size = new System.Drawing.Size(132, 92);
             this.mnuDirectories.Opening += new System.ComponentModel.CancelEventHandler(this.mnuDirectories_Opening);
             // 
             // extractDirectoryToolStripMenuItem
             // 
             this.extractDirectoryToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_export;
             this.extractDirectoryToolStripMenuItem.Name = "extractDirectoryToolStripMenuItem";
-            this.extractDirectoryToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.extractDirectoryToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.extractDirectoryToolStripMenuItem.Text = "E&xtract...";
             this.extractDirectoryToolStripMenuItem.Click += new System.EventHandler(this.extractDirectoryToolStripMenuItem_Click);
             // 
@@ -529,7 +541,7 @@
             // 
             this.replaceDirectoryToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_import;
             this.replaceDirectoryToolStripMenuItem.Name = "replaceDirectoryToolStripMenuItem";
-            this.replaceDirectoryToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.replaceDirectoryToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.replaceDirectoryToolStripMenuItem.Text = "&Replace...";
             this.replaceDirectoryToolStripMenuItem.Click += new System.EventHandler(this.replaceDirectoryToolStripMenuItem_Click);
             // 
@@ -537,7 +549,7 @@
             // 
             this.addToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_add;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.addToolStripMenuItem.Text = "&Add...";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
@@ -545,7 +557,7 @@
             // 
             this.deleteDirectoryToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_delete;
             this.deleteDirectoryToolStripMenuItem.Name = "deleteDirectoryToolStripMenuItem";
-            this.deleteDirectoryToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.deleteDirectoryToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.deleteDirectoryToolStripMenuItem.Text = "Delete";
             this.deleteDirectoryToolStripMenuItem.Click += new System.EventHandler(this.deleteDirectoryToolStripMenuItem_Click);
             // 
@@ -559,14 +571,14 @@
             this.tlsFiles.Location = new System.Drawing.Point(0, 0);
             this.tlsFiles.Name = "tlsFiles";
             this.tlsFiles.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsFiles.Size = new System.Drawing.Size(320, 27);
+            this.tlsFiles.Size = new System.Drawing.Size(320, 25);
             this.tlsFiles.TabIndex = 0;
             // 
             // tslDirectories
             // 
             this.tslDirectories.Name = "tslDirectories";
-            this.tslDirectories.Size = new System.Drawing.Size(82, 22);
-            this.tslDirectories.Text = "Directory Tree:";
+            this.tslDirectories.Size = new System.Drawing.Size(71, 20);
+            this.tslDirectories.Text = "树状文件夹:";
             // 
             // lstFiles
             // 
@@ -579,12 +591,12 @@
             this.lstFiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstFiles.FullRowSelect = true;
             this.lstFiles.HideSelection = false;
-            this.lstFiles.Location = new System.Drawing.Point(0, 27);
+            this.lstFiles.Location = new System.Drawing.Point(0, 25);
             this.lstFiles.MultiSelect = false;
             this.lstFiles.Name = "lstFiles";
             this.lstFiles.ShowGroups = false;
             this.lstFiles.ShowItemToolTips = true;
-            this.lstFiles.Size = new System.Drawing.Size(611, 510);
+            this.lstFiles.Size = new System.Drawing.Size(611, 467);
             this.lstFiles.TabIndex = 5;
             this.lstFiles.TileSize = new System.Drawing.Size(168, 36);
             this.lstFiles.UseCompatibleStateImageBehavior = false;
@@ -619,14 +631,14 @@
             this.editInKukkiiToolStripMenuItem,
             this.editInKarameruToolStripMenuItem});
             this.mnuFiles.Name = "mnuEntries";
-            this.mnuFiles.Size = new System.Drawing.Size(162, 164);
+            this.mnuFiles.Size = new System.Drawing.Size(174, 164);
             this.mnuFiles.Opening += new System.ComponentModel.CancelEventHandler(this.mnuFiles_Opening);
             // 
             // extractFileToolStripMenuItem
             // 
             this.extractFileToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_export;
             this.extractFileToolStripMenuItem.Name = "extractFileToolStripMenuItem";
-            this.extractFileToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.extractFileToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.extractFileToolStripMenuItem.Text = "E&xtract...";
             this.extractFileToolStripMenuItem.Click += new System.EventHandler(this.extractFileToolStripMenuItem_Click);
             // 
@@ -634,7 +646,7 @@
             // 
             this.replaceFileToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_import;
             this.replaceFileToolStripMenuItem.Name = "replaceFileToolStripMenuItem";
-            this.replaceFileToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.replaceFileToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.replaceFileToolStripMenuItem.Text = "&Replace...";
             this.replaceFileToolStripMenuItem.Click += new System.EventHandler(this.replaceFileToolStripMenuItem_Click);
             // 
@@ -642,26 +654,26 @@
             // 
             this.renameFileToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_field_properties;
             this.renameFileToolStripMenuItem.Name = "renameFileToolStripMenuItem";
-            this.renameFileToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.renameFileToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.renameFileToolStripMenuItem.Text = "Re&name...";
             // 
             // deleteFileToolStripMenuItem
             // 
             this.deleteFileToolStripMenuItem.Image = global::Karameru.Properties.Resources.menu_delete;
             this.deleteFileToolStripMenuItem.Name = "deleteFileToolStripMenuItem";
-            this.deleteFileToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.deleteFileToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.deleteFileToolStripMenuItem.Text = "&Delete";
             // 
             // editListToolStripSeparator
             // 
             this.editListToolStripSeparator.Name = "editListToolStripSeparator";
-            this.editListToolStripSeparator.Size = new System.Drawing.Size(158, 6);
+            this.editListToolStripSeparator.Size = new System.Drawing.Size(170, 6);
             // 
             // editInKuriimuToolStripMenuItem
             // 
             this.editInKuriimuToolStripMenuItem.Image = global::Karameru.Properties.Resources.kuriimu;
             this.editInKuriimuToolStripMenuItem.Name = "editInKuriimuToolStripMenuItem";
-            this.editInKuriimuToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.editInKuriimuToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.editInKuriimuToolStripMenuItem.Tag = "";
             this.editInKuriimuToolStripMenuItem.Text = "Edit in Kuriimu";
             this.editInKuriimuToolStripMenuItem.Click += new System.EventHandler(this.editFileToolStripMenuItem_Click);
@@ -670,7 +682,7 @@
             // 
             this.editInKukkiiToolStripMenuItem.Image = global::Karameru.Properties.Resources.kukkii;
             this.editInKukkiiToolStripMenuItem.Name = "editInKukkiiToolStripMenuItem";
-            this.editInKukkiiToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.editInKukkiiToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.editInKukkiiToolStripMenuItem.Text = "Edit in Kukkii";
             this.editInKukkiiToolStripMenuItem.Click += new System.EventHandler(this.editFileToolStripMenuItem_Click);
             // 
@@ -678,7 +690,7 @@
             // 
             this.editInKarameruToolStripMenuItem.Image = global::Karameru.Properties.Resources.karameru1;
             this.editInKarameruToolStripMenuItem.Name = "editInKarameruToolStripMenuItem";
-            this.editInKarameruToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.editInKarameruToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.editInKarameruToolStripMenuItem.Text = "Edit in Karameru";
             this.editInKarameruToolStripMenuItem.Click += new System.EventHandler(this.editFileToolStripMenuItem_Click);
             // 
@@ -690,16 +702,16 @@
             this.tlsFileDetails.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tlsFileDetails.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslFileCount});
-            this.tlsFileDetails.Location = new System.Drawing.Point(0, 537);
+            this.tlsFileDetails.Location = new System.Drawing.Point(0, 492);
             this.tlsFileDetails.Name = "tlsFileDetails";
             this.tlsFileDetails.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsFileDetails.Size = new System.Drawing.Size(611, 27);
+            this.tlsFileDetails.Size = new System.Drawing.Size(611, 25);
             this.tlsFileDetails.TabIndex = 6;
             // 
             // tslFileCount
             // 
             this.tslFileCount.Name = "tslFileCount";
-            this.tslFileCount.Size = new System.Drawing.Size(58, 22);
+            this.tslFileCount.Size = new System.Drawing.Size(61, 20);
             this.tslFileCount.Text = "FileCount";
             // 
             // tlsPreview
@@ -717,7 +729,7 @@
             this.tlsPreview.Location = new System.Drawing.Point(0, 0);
             this.tlsPreview.Name = "tlsPreview";
             this.tlsPreview.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tlsPreview.Size = new System.Drawing.Size(611, 27);
+            this.tlsPreview.Size = new System.Drawing.Size(611, 25);
             this.tlsPreview.TabIndex = 4;
             // 
             // tsbFileExtract
@@ -727,8 +739,8 @@
             this.tsbFileExtract.Image = global::Karameru.Properties.Resources.menu_export;
             this.tsbFileExtract.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFileExtract.Name = "tsbFileExtract";
-            this.tsbFileExtract.Size = new System.Drawing.Size(23, 22);
-            this.tsbFileExtract.Text = "Extract File";
+            this.tsbFileExtract.Size = new System.Drawing.Size(23, 20);
+            this.tsbFileExtract.Text = "提取文件";
             this.tsbFileExtract.Click += new System.EventHandler(this.tsbFileExtract_Click);
             // 
             // tsbFileReplace
@@ -738,8 +750,8 @@
             this.tsbFileReplace.Image = global::Karameru.Properties.Resources.menu_import;
             this.tsbFileReplace.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFileReplace.Name = "tsbFileReplace";
-            this.tsbFileReplace.Size = new System.Drawing.Size(23, 22);
-            this.tsbFileReplace.Text = "Replace File";
+            this.tsbFileReplace.Size = new System.Drawing.Size(23, 20);
+            this.tsbFileReplace.Text = "替换文件";
             this.tsbFileReplace.Click += new System.EventHandler(this.tsbFileReplace_Click);
             // 
             // tsbFileRename
@@ -749,8 +761,8 @@
             this.tsbFileRename.Image = global::Karameru.Properties.Resources.menu_field_properties;
             this.tsbFileRename.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFileRename.Name = "tsbFileRename";
-            this.tsbFileRename.Size = new System.Drawing.Size(23, 22);
-            this.tsbFileRename.Text = "Rename File";
+            this.tsbFileRename.Size = new System.Drawing.Size(23, 20);
+            this.tsbFileRename.Text = "文件重命名";
             // 
             // tsbFileDelete
             // 
@@ -759,8 +771,8 @@
             this.tsbFileDelete.Image = global::Karameru.Properties.Resources.menu_delete;
             this.tsbFileDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFileDelete.Name = "tsbFileDelete";
-            this.tsbFileDelete.Size = new System.Drawing.Size(23, 22);
-            this.tsbFileDelete.Text = "Delete File";
+            this.tsbFileDelete.Size = new System.Drawing.Size(23, 20);
+            this.tsbFileDelete.Text = "删除文件";
             this.tsbFileDelete.Click += new System.EventHandler(this.tsbFileDelete_Click);
             // 
             // tsbFileProperties
@@ -770,8 +782,8 @@
             this.tsbFileProperties.Image = global::Karameru.Properties.Resources.menu_properties;
             this.tsbFileProperties.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbFileProperties.Name = "tsbFileProperties";
-            this.tsbFileProperties.Size = new System.Drawing.Size(23, 22);
-            this.tsbFileProperties.Text = "File Properties";
+            this.tsbFileProperties.Size = new System.Drawing.Size(23, 20);
+            this.tsbFileProperties.Text = "文件属性";
             // 
             // tsbView
             // 
@@ -786,47 +798,47 @@
             this.tsbView.Image = ((System.Drawing.Image)(resources.GetObject("tsbView.Image")));
             this.tsbView.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbView.Name = "tsbView";
-            this.tsbView.Size = new System.Drawing.Size(45, 22);
-            this.tsbView.Text = "View";
+            this.tsbView.Size = new System.Drawing.Size(45, 20);
+            this.tsbView.Text = "查看";
             // 
             // largeToolStripMenuItem
             // 
             this.largeToolStripMenuItem.Image = global::Karameru.Properties.Resources.view_large;
             this.largeToolStripMenuItem.Name = "largeToolStripMenuItem";
-            this.largeToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.largeToolStripMenuItem.Text = "Large";
+            this.largeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.largeToolStripMenuItem.Text = "大图标";
             this.largeToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // smallToolStripMenuItem
             // 
             this.smallToolStripMenuItem.Image = global::Karameru.Properties.Resources.view_small;
             this.smallToolStripMenuItem.Name = "smallToolStripMenuItem";
-            this.smallToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.smallToolStripMenuItem.Text = "Small";
+            this.smallToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.smallToolStripMenuItem.Text = "小图标";
             this.smallToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // listToolStripMenuItem
             // 
             this.listToolStripMenuItem.Image = global::Karameru.Properties.Resources.view_list;
             this.listToolStripMenuItem.Name = "listToolStripMenuItem";
-            this.listToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.listToolStripMenuItem.Text = "List";
+            this.listToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listToolStripMenuItem.Text = "列表";
             this.listToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // detailsToolStripMenuItem
             // 
             this.detailsToolStripMenuItem.Image = global::Karameru.Properties.Resources.view_details;
             this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
-            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.detailsToolStripMenuItem.Text = "Details";
+            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.detailsToolStripMenuItem.Text = "详细信息";
             this.detailsToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // tileToolStripMenuItem
             // 
             this.tileToolStripMenuItem.Image = global::Karameru.Properties.Resources.view_tiles;
             this.tileToolStripMenuItem.Name = "tileToolStripMenuItem";
-            this.tileToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.tileToolStripMenuItem.Text = "Tiles";
+            this.tileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tileToolStripMenuItem.Text = "平铺";
             this.tileToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // imlFiles
@@ -841,24 +853,12 @@
             this.imlFilesLarge.ImageSize = new System.Drawing.Size(32, 32);
             this.imlFilesLarge.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
-            // 
-            // upgradeToKuriimu2ToolStripMenuItem
-            // 
-            this.upgradeToKuriimu2ToolStripMenuItem.Name = "upgradeToKuriimu2ToolStripMenuItem";
-            this.upgradeToKuriimu2ToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
-            this.upgradeToKuriimu2ToolStripMenuItem.Text = "Upgrade to Kuriimu2";
-            this.upgradeToKuriimu2ToolStripMenuItem.Click += new System.EventHandler(this.upgradeToKuriimu2ToolStripMenuItem_Click);
-            // 
             // Manager
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 627);
+            this.ClientSize = new System.Drawing.Size(949, 579);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.tlsMain);
             this.Controls.Add(this.mnuMain);

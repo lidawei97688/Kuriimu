@@ -16,7 +16,7 @@ namespace archive_fnt
         public string Name => "FNT";
         public string Description => "FNT Format";
         public string Extension => "*.fnt";
-        public string About => "This is the FNT archive manager for Karameru.";
+        public string About => "这是 Karameru 的 FNT 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

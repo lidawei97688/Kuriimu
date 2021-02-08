@@ -31,18 +31,18 @@ namespace Kukkii
 
         Dictionary<string, string> _stylesText = new Dictionary<string, string>
         {
-            ["None"] = "None",
-            ["FixedSingle"] = "Simple",
-            ["FixedSingleDropShadow"] = "Drop Shadow",
-            ["FixedSingleGlowShadow"] = "Glow Shadow"
+            ["None"] = "无",
+            ["FixedSingle"] = "简易",
+            ["FixedSingleDropShadow"] = "投射阴影",
+            ["FixedSingleGlowShadow"] = "发光阴影"
         };
 
         Dictionary<string, string> _stylesImages = new Dictionary<string, string>
         {
-            ["None"] = "menu_border_none",
-            ["FixedSingle"] = "menu_border_simple",
-            ["FixedSingleDropShadow"] = "menu_border_drop_shadow",
-            ["FixedSingleGlowShadow"] = "menu_border_glow_shadow"
+            ["None"] = "菜单边框_无",
+            ["FixedSingle"] = "菜单边框_简易",
+            ["FixedSingleDropShadow"] = "菜单边框_投射阴影",
+            ["FixedSingleGlowShadow"] = "菜单边框_发光阴影"
         };
 
         public Converter(string[] args)
@@ -164,7 +164,7 @@ namespace Kukkii
             DialogResult dr = DialogResult.No;
 
             if (_fileOpen && _hasChanges)
-                dr = MessageBox.Show($"You have unsaved changes in {FileName()}. Save changes before opening another file?", "Unsaved Changes", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                dr = MessageBox.Show($"{FileName()}中有尚未保存的更改。是否在打开另一个文件之前保存更改？", "更改尚未保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
             switch (dr)
             {
@@ -214,7 +214,7 @@ namespace Kukkii
                     UpdateImageList();
                     if (_imageAdapter.Bitmaps?.Count <= 0)
                     {
-                        MessageBox.Show(this, $"{FileName()} was loaded by the \"{tempAdapter.Description}\" adapter but it provided no images.", "Supported Format Load Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(this, $"{FileName()} 已由 \"{tempAdapter.Description}\" 适配器加载，但没有提供图像。", "支持的格式载入错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         _imageAdapter = null;
                         _fileOpen = false;
                     }
@@ -226,7 +226,7 @@ namespace Kukkii
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.ToString(), tempAdapter != null ? $"{tempAdapter.Name} - {tempAdapter.Description} Adapter" : "Supported Format Load Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.ToString(), tempAdapter != null ? $"{tempAdapter.Name} - {tempAdapter.Description} 适配器" : "支持的格式载入错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -235,7 +235,7 @@ namespace Kukkii
             var sfd = new SaveFileDialog();
             var dr = DialogResult.OK;
 
-            sfd.Title = $"Save as {_imageAdapter.Description}";
+            sfd.Title = $"另存为 {_imageAdapter.Description}";
             sfd.FileName = _imageAdapter.FileInfo.Name;
             sfd.Filter = _imageAdapter.Description + " (" + _imageAdapter.Extension + ")|" + _imageAdapter.Extension;
 
@@ -264,7 +264,7 @@ namespace Kukkii
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.ToString(), _imageAdapter != null ? $"{_imageAdapter.Name} - {_imageAdapter.Description} Adapter" : "Supported Format Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.ToString(), _imageAdapter != null ? $"{_imageAdapter.Name} - {_imageAdapter.Description} 适配器" : "支持的格式保存错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return dr;
@@ -284,7 +284,7 @@ namespace Kukkii
                 result = _imageAdapters.Except(matchingAdapters).FirstOrDefault(adapter => adapter.Identify(filename));
 
             if (result == null && !batchMode)
-                MessageBox.Show("None of the installed plugins are able to open the file.", "Unsupported Format", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("所有已安装的插件都无法打开该文件。", "不支持的格式", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             return result == null ? null : (IImageAdapter)Activator.CreateInstance(result.GetType());
         }
@@ -293,7 +293,7 @@ namespace Kukkii
         {
             SaveFileDialog sfd = new SaveFileDialog
             {
-                Title = "Export PNG...",
+                Title = "导出 PNG...",
                 InitialDirectory = Settings.Default.LastDirectory,
                 FileName = _imageAdapter.FileInfo.Name + "." + _selectedImageIndex.ToString("00") + ".png",
                 Filter = "Portable Network Graphics (*.png)|*.png",
@@ -308,7 +308,7 @@ namespace Kukkii
         {
             OpenFileDialog ofd = new OpenFileDialog
             {
-                Title = "Import PNG...",
+                Title = "嵌入 PNG...",
                 InitialDirectory = Settings.Default.LastDirectory,
                 Filter = "Portable Network Graphics (*.png)|*.png"
             };
@@ -472,7 +472,7 @@ namespace Kukkii
             }
 
             // Batch Import/Export
-            batchScanSubdirectoriesToolStripMenuItem.Text = Settings.Default.BatchScanSubdirectories ? "Scan Sub-directories" : "Don't Scan Sub-directories";
+            batchScanSubdirectoriesToolStripMenuItem.Text = Settings.Default.BatchScanSubdirectories ? "扫描子文件夹" : "不扫描子文件夹";
             batchScanSubdirectoriesToolStripMenuItem.Image = Settings.Default.BatchScanSubdirectories ? Resources.menu_scan_subdirectories_on : Resources.menu_scan_subdirectories_off;
             tsbBatchScanSubdirectories.Text = batchScanSubdirectoriesToolStripMenuItem.Text;
             tsbBatchScanSubdirectories.Image = batchScanSubdirectoriesToolStripMenuItem.Image;
@@ -495,7 +495,7 @@ namespace Kukkii
         private void tsbBatchExport_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "Select the source directory containing image files..." + (Settings.Default.BatchScanSubdirectories ? "\r\nSub-directories will be scanned." : string.Empty);
+            fbd.Description = "选择包含图像文件的源文件夹..." + (Settings.Default.BatchScanSubdirectories ? "\r\n子文件夹将会被扫描." : string.Empty);
             fbd.SelectedPath = Settings.Default.LastBatchDirectory == string.Empty ? Settings.Default.LastDirectory : Settings.Default.LastBatchDirectory;
             fbd.ShowNewFolderButton = false;
 
@@ -517,7 +517,7 @@ namespace Kukkii
                     Parallel.ForEach(files, file => BatchExportPNGTask(file, ref count, ref exported, ref errors));
                     GC.Collect();
 
-                    MessageBox.Show($"Batch export completed {(errors.Count > 0 ? $"with {errors.Count} errors" : "successfully")}. {count} texture(s) succesfully exported to {exported} images.", "Batch Export", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"批量导出 {(errors.Count > 0 ? $"结束，但是有 {errors.Count} 处错误" : "全部完成")}. {count} 个纹理成功导出到 {exported} 图像.", "批量导出", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     if (errors.Count > 0)
                     {
@@ -562,7 +562,7 @@ namespace Kukkii
         private void tsbBatchImport_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "Select the source directory containing image and png file pairs..." + (Settings.Default.BatchScanSubdirectories ? "\r\nSub-directories will be scanned." : string.Empty);
+            fbd.Description = "选择包含图像和png文件对的源文件夹..." + (Settings.Default.BatchScanSubdirectories ? "\r\n子文件夹将会被扫描。" : string.Empty);
             fbd.SelectedPath = Settings.Default.LastBatchDirectory == string.Empty ? Settings.Default.LastDirectory : Settings.Default.LastBatchDirectory;
             fbd.ShowNewFolderButton = false;
 
@@ -584,7 +584,7 @@ namespace Kukkii
                     Parallel.ForEach(files, file => BatchImportPNGTask(file, ref fileCount, ref importCount, ref errors));
                     GC.Collect();
 
-                    MessageBox.Show($"Batch import completed {(errors.Count > 0 ? $"with {errors.Count} errors" : "successfully")}. {importCount} of {fileCount} files succesfully imported.", "Batch Import", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"批量导入 {(errors.Count > 0 ? $"结束，但是有 {errors.Count} 处错误" : "全部完成")}.已成功导入 {fileCount} 个文件中的 {importCount} 个.", "批量导入", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     if (errors.Count > 0)
                     {
@@ -721,7 +721,7 @@ namespace Kukkii
 
         private void imbPreview_Zoomed(object sender, ImageBoxZoomEventArgs e)
         {
-            tslZoom.Text = "Zoom: " + imbPreview.Zoom + "%";
+            tslZoom.Text = "缩放: " + imbPreview.Zoom + "%";
         }
 
         private void imbPreview_KeyDown(object sender, KeyEventArgs e)
@@ -730,7 +730,7 @@ namespace Kukkii
             {
                 imbPreview.SelectionMode = ImageBoxSelectionMode.None;
                 imbPreview.Cursor = Cursors.SizeAll;
-                tslTool.Text = "Tool: Pan";
+                tslTool.Text = "工具: 笔";
             }
         }
 
@@ -740,7 +740,7 @@ namespace Kukkii
             {
                 imbPreview.SelectionMode = ImageBoxSelectionMode.Zoom;
                 imbPreview.Cursor = Cursors.Default;
-                tslTool.Text = "Tool: Zoom";
+                tslTool.Text = "工具: 缩放";
             }
         }
 

@@ -41,7 +41,7 @@ namespace Knit
         private void frmMain_Load(object sender, EventArgs e)
         {
             // Initialize
-            BaseDirectory = "patch";
+            BaseDirectory = "打补丁";
             MetaDirectory = Path.Combine(BaseDirectory, "meta");
 
             LoadMeta();
@@ -118,7 +118,7 @@ namespace Knit
             btnAbout.Text = Meta.Layout.AboutButton.Text;
             btnAbout.Location = Meta.Layout.AboutButton.Location;
             btnAbout.Size = Meta.Layout.AboutButton.Size;
-            tt.SetToolTip(btnAbout, "About");
+            tt.SetToolTip(btnAbout, "关于");
 
             // Website
             iconPath = Path.Combine(MetaDirectory, Meta.Layout.WebsiteButton.Icon ?? "");
@@ -128,7 +128,7 @@ namespace Knit
             btnWebsite.Location = Meta.Layout.WebsiteButton.Location;
             btnWebsite.Size = Meta.Layout.WebsiteButton.Size;
             btnWebsite.Visible = !string.IsNullOrWhiteSpace(Meta.Website) && Regex.IsMatch(Meta.Website, @"^https?://");
-            tt.SetToolTip(btnWebsite, $"Website: {Meta.Website}");
+            tt.SetToolTip(btnWebsite, $"网站: {Meta.Website}");
 
             // Status Bar
             txtStatus.ForeColor = Meta.Layout.StatusTextBox.Color;
@@ -141,19 +141,19 @@ namespace Knit
         private void UpdateForm()
         {
             btnPatch.Enabled = !Patching;
-            btnExit.Text = !Patching ? ExitButtonText : "Cancel";
+            btnExit.Text = !Patching ? ExitButtonText : "取消";
             btnExit.Enabled = true;
         }
 
         private void UpdateMusic()
         {
             btnMusic.Image = MusicOn ? MusicOnIcon : MusicOffIcon;
-            new ToolTip().SetToolTip(btnMusic, MusicOn ? "Music Off" : "Music On");
+            new ToolTip().SetToolTip(btnMusic, MusicOn ? "音乐关闭" : "音乐开启");
 
             if (!File.Exists(MusicPath)) return;
             MediaPlayer.URL = MusicPath;
             MediaPlayer.settings.volume = Math.Min(Math.Max(0, Meta.Volume), 100);
-            MediaPlayer.settings.setMode("loop", true);
+            MediaPlayer.settings.setMode("循环", true);
 
             try
             {
@@ -248,16 +248,16 @@ namespace Knit
                     {
                         case StepStatus.Failure:
                         case StepStatus.Error:
-                            txtStatus.AppendText("Patching failed.");
+                            txtStatus.AppendText("打补丁失败.");
                             break;
                         case StepStatus.Cancel:
-                            txtStatus.AppendText("Patching cancelled.");
+                            txtStatus.AppendText("已取消打补丁操作.");
                             break;
                     }
                 }
                 catch (Exception ex)
                 {
-                    txtStatus.AppendText("Exception: " + ex.Message.Trim());
+                    txtStatus.AppendText("例外: " + ex.Message.Trim());
                     error = true;
                 }
 
@@ -280,11 +280,11 @@ namespace Knit
 
             if (!error && !Cancelled)
             {
-                txtStatus.AppendText("Patch applied successfully!");
+                txtStatus.AppendText("已成功应用修补程序!");
                 prgProgress.Value = prgProgress.Maximum;
             }
             if (Cancelled)
-                txtStatus.AppendText("Cancelled...");
+                txtStatus.AppendText("已取消...");
 
             Patching = false;
             Cancelled = false;
@@ -299,7 +299,7 @@ namespace Knit
             {
                 Patching = false;
                 Cancelled = true;
-                btnExit.Text = "Cancelling...";
+                btnExit.Text = "正在取消...";
                 btnExit.Enabled = false;
             }
         }
@@ -312,7 +312,7 @@ namespace Knit
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"{Meta.About}", $"About {Meta.Title}", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"{Meta.About}", $"关于 {Meta.Title}", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnWebsite_Click(object sender, EventArgs e)
@@ -322,7 +322,7 @@ namespace Knit
 
         private void DoubleBuffer(Control ctrl, bool doubleBuffered)
         {
-            ctrl.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(ctrl, doubleBuffered, null);
+            ctrl.GetType().GetProperty("双重缓冲", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(ctrl, doubleBuffered, null);
         }
     }
 }

@@ -50,7 +50,7 @@ namespace Kuriimu
 
         private void Name_Load(object sender, EventArgs e)
         {
-            Text = _isNew ? "New Label" : "Edit Label";
+            Text = _isNew ? "新标签" : "编辑标签";
             Icon = Resources.kuriimu;
 
             txtName.Text = _name;
@@ -84,10 +84,10 @@ namespace Kuriimu
                     DialogResult = DialogResult.OK;
                 }
                 else
-                    MessageBox.Show("Label names must be unique. " + newName + " already exists.", "Must Be Unique", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("标签名称必须唯一， " + newName + " 已存在。", "必须是唯一的", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
-                MessageBox.Show("Label names must be unique but a name list was not provided.", "Name List Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("标签名称必须唯一，但未提供名称列表.", "名称列表错误", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace archive_dpk.DPK4
         public string Name => Properties.Settings.Default.PluginName;
         public string Description => "Data Package v4";
         public string Extension => "*.dpk";
-        public string About => "This is the DPK4 archive manager for Karameru.";
+        public string About => "这是 Karameru 的 DPK4 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

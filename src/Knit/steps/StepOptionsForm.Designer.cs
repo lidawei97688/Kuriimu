@@ -30,9 +30,9 @@
         {
             this.pnlMain = new System.Windows.Forms.Panel();
             this.splMain = new System.Windows.Forms.SplitContainer();
+            this.pnlOptions = new System.Windows.Forms.Panel();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.pnlOptions = new System.Windows.Forms.Panel();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splMain)).BeginInit();
             this.splMain.Panel1.SuspendLayout();
@@ -47,7 +47,7 @@
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(184, 162);
+            this.pnlMain.Size = new System.Drawing.Size(184, 150);
             this.pnlMain.TabIndex = 1;
             // 
             // splMain
@@ -68,21 +68,29 @@
             // 
             this.splMain.Panel2.Controls.Add(this.btnOK);
             this.splMain.Panel2.Controls.Add(this.btnCancel);
-            this.splMain.Panel2.Padding = new System.Windows.Forms.Padding(6, 0, 6, 7);
-            this.splMain.Size = new System.Drawing.Size(184, 162);
-            this.splMain.SplitterDistance = 124;
+            this.splMain.Panel2.Padding = new System.Windows.Forms.Padding(6, 0, 6, 6);
+            this.splMain.Size = new System.Drawing.Size(184, 150);
+            this.splMain.SplitterDistance = 115;
             this.splMain.SplitterWidth = 1;
             this.splMain.TabIndex = 0;
             this.splMain.TabStop = false;
             // 
+            // pnlOptions
+            // 
+            this.pnlOptions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlOptions.Location = new System.Drawing.Point(10, 4);
+            this.pnlOptions.Name = "pnlOptions";
+            this.pnlOptions.Size = new System.Drawing.Size(164, 111);
+            this.pnlOptions.TabIndex = 0;
+            // 
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(22, 7);
+            this.btnOK.Location = new System.Drawing.Point(22, 9);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 21);
             this.btnOK.TabIndex = 1;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -90,35 +98,27 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(103, 7);
+            this.btnCancel.Location = new System.Drawing.Point(103, 9);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 0;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // pnlOptions
-            // 
-            this.pnlOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlOptions.Location = new System.Drawing.Point(10, 4);
-            this.pnlOptions.Name = "pnlOptions";
-            this.pnlOptions.Size = new System.Drawing.Size(164, 120);
-            this.pnlOptions.TabIndex = 0;
             // 
             // StepOptionsForm
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(184, 162);
+            this.ClientSize = new System.Drawing.Size(184, 150);
             this.Controls.Add(this.pnlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(200, 200);
+            this.MinimumSize = new System.Drawing.Size(200, 188);
             this.Name = "StepOptionsForm";
-            this.Text = "Select options...";
+            this.Text = "选择选项...";
             this.Load += new System.EventHandler(this.StepOptionsForm_Load);
             this.pnlMain.ResumeLayout(false);
             this.splMain.Panel1.ResumeLayout(false);

@@ -67,7 +67,7 @@ namespace text_msbt
                 var backupFilePath = FileInfo.FullName + ".bak";
                 if (File.Exists(backupFilePath))
                     _msbtBackup = new MSBT(File.OpenRead(backupFilePath));
-                else if (autoBackup || MessageBox.Show("Would you like to create a backup of " + FileInfo.Name + "?\r\nA backup allows the Original text box to display the source text before edits were made.", "Create Backup", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                else if (autoBackup || MessageBox.Show("在显示原始文本进行编辑之前，\r\n是否要创建 " + FileInfo.Name + " 的备份？", "创建备份", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     File.Copy(FileInfo.FullName, backupFilePath);
                     _msbtBackup = new MSBT(File.OpenRead(backupFilePath));

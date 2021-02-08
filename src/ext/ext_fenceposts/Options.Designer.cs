@@ -40,77 +40,77 @@
             // lblMemoryOffset
             // 
             this.lblMemoryOffset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblMemoryOffset.Location = new System.Drawing.Point(12, 36);
+            this.lblMemoryOffset.Location = new System.Drawing.Point(12, 33);
             this.lblMemoryOffset.Name = "lblMemoryOffset";
-            this.lblMemoryOffset.Size = new System.Drawing.Size(106, 22);
+            this.lblMemoryOffset.Size = new System.Drawing.Size(106, 20);
             this.lblMemoryOffset.TabIndex = 0;
-            this.lblMemoryOffset.Text = "Memory Offset:";
+            this.lblMemoryOffset.Text = "内存偏移量：";
             this.lblMemoryOffset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtMemoryOffset
             // 
-            this.txtMemoryOffset.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txtMemoryOffset.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMemoryOffset.Location = new System.Drawing.Point(124, 38);
+            this.txtMemoryOffset.Location = new System.Drawing.Point(124, 35);
             this.txtMemoryOffset.Name = "txtMemoryOffset";
-            this.txtMemoryOffset.Size = new System.Drawing.Size(205, 20);
+            this.txtMemoryOffset.Size = new System.Drawing.Size(205, 21);
             this.txtMemoryOffset.TabIndex = 1;
             // 
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(234, 89);
+            this.btnOK.Location = new System.Drawing.Point(234, 82);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 21);
             this.btnOK.TabIndex = 3;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(315, 89);
+            this.btnCancel.Location = new System.Drawing.Point(315, 82);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // chkOptimizeStrings
             // 
-            this.chkOptimizeStrings.Location = new System.Drawing.Point(124, 64);
+            this.chkOptimizeStrings.Location = new System.Drawing.Point(124, 59);
             this.chkOptimizeStrings.Name = "chkOptimizeStrings";
-            this.chkOptimizeStrings.Size = new System.Drawing.Size(138, 19);
+            this.chkOptimizeStrings.Size = new System.Drawing.Size(138, 18);
             this.chkOptimizeStrings.TabIndex = 2;
-            this.chkOptimizeStrings.Text = "Optimize Strings";
+            this.chkOptimizeStrings.Text = "优化字符串";
             this.chkOptimizeStrings.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 22);
+            this.label1.Size = new System.Drawing.Size(106, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Encoding:";
+            this.label1.Text = "编码：";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // cmbEncoding
             // 
             this.cmbEncoding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEncoding.FormattingEnabled = true;
-            this.cmbEncoding.Location = new System.Drawing.Point(124, 11);
+            this.cmbEncoding.Location = new System.Drawing.Point(124, 10);
             this.cmbEncoding.Name = "cmbEncoding";
-            this.cmbEncoding.Size = new System.Drawing.Size(205, 21);
+            this.cmbEncoding.Size = new System.Drawing.Size(205, 20);
             this.cmbEncoding.TabIndex = 0;
             // 
-            // frmOptions
+            // Options
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 119);
+            this.ClientSize = new System.Drawing.Size(396, 110);
             this.Controls.Add(this.cmbEncoding);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chkOptimizeStrings);
@@ -121,7 +121,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmOptions";
+            this.Name = "Options";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Options";
             this.Load += new System.EventHandler(this.Options_Load);

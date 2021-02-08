@@ -43,106 +43,106 @@
             // lblStart
             // 
             this.lblStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblStart.Location = new System.Drawing.Point(8, 10);
+            this.lblStart.Location = new System.Drawing.Point(8, 9);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(90, 22);
+            this.lblStart.Size = new System.Drawing.Size(90, 20);
             this.lblStart.TabIndex = 0;
             this.lblStart.Text = "Start Offset:";
             this.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtStart
             // 
-            this.txtStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txtStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtStart.Location = new System.Drawing.Point(104, 12);
+            this.txtStart.Location = new System.Drawing.Point(104, 11);
             this.txtStart.Name = "txtStart";
-            this.txtStart.Size = new System.Drawing.Size(221, 20);
+            this.txtStart.Size = new System.Drawing.Size(221, 21);
             this.txtStart.TabIndex = 1;
             // 
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(234, 194);
+            this.btnOK.Location = new System.Drawing.Point(234, 179);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 21);
             this.btnOK.TabIndex = 6;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(315, 194);
+            this.btnCancel.Location = new System.Drawing.Point(315, 179);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtEnd
             // 
-            this.txtEnd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txtEnd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEnd.Location = new System.Drawing.Point(104, 38);
+            this.txtEnd.Location = new System.Drawing.Point(104, 35);
             this.txtEnd.Name = "txtEnd";
-            this.txtEnd.Size = new System.Drawing.Size(221, 20);
+            this.txtEnd.Size = new System.Drawing.Size(221, 21);
             this.txtEnd.TabIndex = 2;
             // 
             // lblEnd
             // 
             this.lblEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblEnd.Location = new System.Drawing.Point(8, 36);
+            this.lblEnd.Location = new System.Drawing.Point(8, 33);
             this.lblEnd.Name = "lblEnd";
-            this.lblEnd.Size = new System.Drawing.Size(90, 22);
+            this.lblEnd.Size = new System.Drawing.Size(90, 20);
             this.lblEnd.TabIndex = 4;
             this.lblEnd.Text = "End Offset:";
             this.lblEnd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtNotes
             // 
-            this.txtNotes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txtNotes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNotes.Location = new System.Drawing.Point(104, 64);
+            this.txtNotes.Location = new System.Drawing.Point(104, 59);
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(221, 74);
+            this.txtNotes.Size = new System.Drawing.Size(221, 69);
             this.txtNotes.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label1.Location = new System.Drawing.Point(8, 62);
+            this.label1.Location = new System.Drawing.Point(12, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 22);
+            this.label1.Size = new System.Drawing.Size(90, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Notes:";
+            this.label1.Text = "信息：";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // chkInjectable
             // 
-            this.chkInjectable.Location = new System.Drawing.Point(104, 169);
+            this.chkInjectable.Location = new System.Drawing.Point(104, 156);
             this.chkInjectable.Name = "chkInjectable";
-            this.chkInjectable.Size = new System.Drawing.Size(154, 19);
+            this.chkInjectable.Size = new System.Drawing.Size(154, 18);
             this.chkInjectable.TabIndex = 5;
-            this.chkInjectable.Text = "Injectable Space";
+            this.chkInjectable.Text = "可注入空间";
             this.chkInjectable.UseVisualStyleBackColor = true;
             // 
             // chkDumpable
             // 
-            this.chkDumpable.Location = new System.Drawing.Point(104, 144);
+            this.chkDumpable.Location = new System.Drawing.Point(104, 133);
             this.chkDumpable.Name = "chkDumpable";
-            this.chkDumpable.Size = new System.Drawing.Size(154, 19);
+            this.chkDumpable.Size = new System.Drawing.Size(154, 18);
             this.chkDumpable.TabIndex = 4;
-            this.chkDumpable.Text = "Dumpable Strings";
+            this.chkDumpable.Text = "可转储字符串";
             this.chkDumpable.UseVisualStyleBackColor = true;
             // 
-            // frmBound
+            // BoundForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 224);
+            this.ClientSize = new System.Drawing.Size(396, 207);
             this.Controls.Add(this.chkDumpable);
             this.Controls.Add(this.chkInjectable);
             this.Controls.Add(this.txtNotes);
@@ -156,7 +156,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmBound";
+            this.Name = "BoundForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Bound";
             this.Load += new System.EventHandler(this.BoundForm_Load);

@@ -16,7 +16,7 @@ namespace archive_srtux
         public string Name => "SRTUX";
         public string Description => "SRTUX Archive";
         public string Extension => "*.bin";
-        public string About => "This is the SRTUX archive manager for Karameru.";
+        public string About => "这是 Karameru 的 SRTUX 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

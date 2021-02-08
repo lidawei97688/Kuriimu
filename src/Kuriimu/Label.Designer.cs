@@ -40,30 +40,30 @@
             // lblName
             // 
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblName.Location = new System.Drawing.Point(8, 10);
+            this.lblName.Location = new System.Drawing.Point(8, 9);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(90, 22);
+            this.lblName.Size = new System.Drawing.Size(90, 20);
             this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name:";
+            this.lblName.Text = "名称：";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtName
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(104, 12);
+            this.txtName.Location = new System.Drawing.Point(104, 11);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(221, 20);
+            this.txtName.Size = new System.Drawing.Size(221, 21);
             this.txtName.TabIndex = 1;
             // 
             // btnOK
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Location = new System.Drawing.Point(234, 80);
+            this.btnOK.Location = new System.Drawing.Point(234, 74);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 21);
             this.btnOK.TabIndex = 2;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -71,29 +71,29 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(315, 80);
+            this.btnCancel.Location = new System.Drawing.Point(315, 74);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lblColor
             // 
             this.lblColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lblColor.Location = new System.Drawing.Point(8, 38);
+            this.lblColor.Location = new System.Drawing.Point(8, 35);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(90, 22);
+            this.lblColor.Size = new System.Drawing.Size(90, 20);
             this.lblColor.TabIndex = 4;
-            this.lblColor.Text = "Color:";
+            this.lblColor.Text = "颜色：";
             this.lblColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnColor
             // 
-            this.btnColor.Location = new System.Drawing.Point(104, 38);
+            this.btnColor.Location = new System.Drawing.Point(104, 35);
             this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(221, 23);
+            this.btnColor.Size = new System.Drawing.Size(221, 21);
             this.btnColor.TabIndex = 5;
             this.btnColor.UseVisualStyleBackColor = true;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
@@ -101,10 +101,10 @@
             // LabelForm
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(396, 110);
+            this.ClientSize = new System.Drawing.Size(396, 102);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.lblColor);
             this.Controls.Add(this.btnCancel);
@@ -116,7 +116,7 @@
             this.MinimizeBox = false;
             this.Name = "LabelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Name";
+            this.Text = "名称";
             this.Load += new System.EventHandler(this.Name_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

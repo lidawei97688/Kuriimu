@@ -58,7 +58,7 @@ namespace Kuriimu
 
         private void Name_Load(object sender, EventArgs e)
         {
-            Text = _isNew ? "Add Entry" : "Rename Entry";
+            Text = _isNew ? "添加条目" : "重命名条目";
             Icon = Resources.kuriimu;
 
             txtName.MaxLength = _maxLength == 0 ? int.MaxValue : _maxLength;
@@ -83,10 +83,10 @@ namespace Kuriimu
                                 DialogResult = DialogResult.OK;
                             }
                             else
-                                MessageBox.Show("Entry names must be unique. " + newName + " already exists.", "Must Be Unique", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                MessageBox.Show("条目名称必须唯一 " + newName + " 已经存在。", "必须是唯一的", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                         else
-                            MessageBox.Show("Entry names must be unique but a name list was not provided by the file plugin.", "File Plugin Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBox.Show("条目名称必须唯一，但文件插件未提供名称列表。", "文件插件错误", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                     else
                     {
@@ -94,9 +94,9 @@ namespace Kuriimu
                         DialogResult = DialogResult.OK;
                     }
                 else
-                    MessageBox.Show("The name entered contains invalid characters. Valid names must satisfy this regular expression: " + _validNameRegex, "Name is Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("输入的名称包含无效字符。有效名称必须满足此正则表达式： " + _validNameRegex, "名称无效", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
-                MessageBox.Show("The name entered is too long. Valid names can only be " + _maxLength + " character(s) long.", "Name Too Long", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("输入的名称太长。有效名称的长度不能超过 " + _maxLength + " 个字符。", "新名称过长", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

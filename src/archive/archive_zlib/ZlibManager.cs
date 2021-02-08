@@ -18,7 +18,7 @@ namespace archive_zlib
         public string Name => "ZLIB";
         public string Description => "ZLib compressed with 4 byte decompressed size";
         public string Extension => "*.zlib";
-        public string About => "This is the ZLIB archive manager for Karameru.";
+        public string About => "这是 Karameru 的 ZLIB 档案管理器。";
 
         // Feature Support
         public bool FileHasExtendedProperties => false;

@@ -53,7 +53,7 @@ namespace archive_3ds_lz
             if (!string.IsNullOrEmpty(filename))
                 FileInfo = new FileInfo(filename);
 
-            if (MessageBox.Show("Use fixed offsets to save the file?", "Fixed Offsets?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("使用固定偏移量保存该文件？", "固定偏移量？", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 _3dslz.UseFixedOffsets = true;
 
             // Save As...
